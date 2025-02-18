@@ -1,0 +1,199 @@
+"biosample","date_collected","donating_institution","extraction_method","galbut_virus_positive_qPCR","lat","location","long","museum_id","R1_strand","RNA_concentration","sample_id","sample_id_in_paper","sample_type","species","storage_type","weeks_dried","X260_230","X260_280","sample_order"
+"SAMN38071661",1896,"Illinois Natural History Survey","Non-Destructive","No",41.436951,"Urbana, IL",-87.678017,"1004284","reverse",4,"1004284","Illinois_1896","Museum
+samples","D. melanogater","Dried",NA,2.1,2.3,1896
+"SAMN38071662",1908,"New York State Museum","Destructive","No",42.65258,"Albany, NY",-73.756233,"-","reverse",152,"Albany1902_1","NewYork_1908","Museum
+samples","D. melanogater","Dried",NA,2,2.1,1908
+"SAMN38071654",1908,"Illinois Natural History Survey","Non-Destructive","Yes",41.436951,"Urbana, IL",-87.678017,"1004277","reverse",54.6,"1004277","Illinois_1908","Museum
+samples","D. melanogater","Dried",NA,1.8,2.1,1908
+"SAMN38071656",1915,"Illinois Natural History Survey","Non-Destructive","Yes",41.436951,"Urbana, IL",-87.678017,"1004279","reverse",84,"1004279","Illinois_1915_1","Museum
+samples","D. melanogater","Dried",NA,2.5,2,1915
+"SAMN38071657",1915,"Illinois Natural History Survey","Non-Destructive","No",41.436951,"Urbana, IL",-87.678017,"1004280","reverse",6.8,"1004280","Illinois_1915_2","Museum
+samples","D. melanogater","Dried",NA,2.3,2,1915
+"SAMN38071658",1915,"Illinois Natural History Survey","Non-Destructive","Yes",41.436951,"Urbana, IL",-87.678017,"1004281","reverse",12.7,"1004281","Illinois_1915_3","Museum
+samples","D. melanogater","Dried",NA,2,2,1915
+"SAMN38071659",1915,"Illinois Natural History Survey","Non-Destructive","No",41.436951,"Urbana, IL",-87.678017,"1004282","reverse",16.9,"1004282","Illinois_1915_4","Museum
+samples","D. melanogater","Dried",NA,2.3,2.1,1915
+"SAMN38090828",1919,"University of Minnesota, Insect Collection","Destructive","Yes",44.953705,"St. Paul, MN",-93.089958,"-","reverse",0,"StPaul1919_1","Minnesota_1919_1","Museum
+samples","D. melanogater","Dried",NA,0.4,1.5,1919
+"SAMN38071687",1919,"University of Minnesota, Insect Collection","Destructive","No",44.953705,"St. Paul, MN",-93.089958,"-","reverse",21.6,"StPaul1919_2","Minnesota_1919_2","Museum
+samples","D. melanogater","Dried",NA,1.8,1.8,1919
+"SAMN38071688",1919,"University of Minnesota, Insect Collection","Destructive","No",44.953705,"St. Paul, MN",-93.089958,"-","reverse",18.9,"StPaul1919_3","Minnesota_1919_3","Museum
+samples","D. melanogater","Dried",NA,1.1,1.8,1919
+"SAMN38071663 ",1927,"New York State Museum","Destructive","No",42.65258,"Albany, NY",-73.756233,"-","reverse",21,"Albany1927_1","NewYork_1927","Museum
+samples","D. melanogater","Dried",NA,2,1.9,1927
+"SAMN38071660",1930,"Illinois Natural History Survey","Non-Destructive","Yes",41.436951,"Urbana, IL",-87.678017,"1004283","reverse",13.6,"1004283","Illinois_1930","Museum
+samples","D. melanogater","Dried",NA,1.8,2.1,1930
+"SAMN38071655",1942,"Illinois Natural History Survey","Non-Destructive","No",40.058323,"Glassboro, NJ",-74.405663,"1004278","reverse",10.2,"1004278","NewJersey_1942","Museum
+samples","D. melanogater","Dried",NA,1.4,1.9,1942
+"-",1950,"University of Hawaii, Insect Museum","Destructive","No",21.472832,"Oahu, HI",-158.041353,"-","reverse",0,"Oahu1950_1_mel","Hawaii_1950_1","Museum
+samples","D. melanogater","Dried",NA,2.2,1,1950
+"-",1950,"University of Hawaii, Insect Museum","Destructive","No",21.472832,"Oahu, HI",-158.041353,"-","reverse",0,"Oahu1950_2_mel","Hawaii_1950_2","Museum
+samples","D. melanogater","Dried",NA,0.2,0.2,1950
+"-",1951,"University of Hawaii, Insect Museum","Destructive","No",21.294944,"Honolulu, HI",-157.848782,"-","reverse",0,"Honolulu1951_1_mel","Hawaii_1951_1","Museum
+samples","D. melanogater","Dried",NA,0.7,1.4,1951
+"-",1951,"University of Hawaii, Insect Museum","Destructive","No",21.472832,"Oahu, HI",-158.041353,"-","reverse",0,"Oahu1951_1_mel","Hawaii_1951_2","Museum
+samples","D. melanogater","Dried",NA,1.3,1.5,1951
+"-",1952,"University of Hawaii, Insect Museum","Destructive","No",21.961817,"Kauai, HI",-159.499054,"-","reverse",0,"Kauai1952_1_mel","Hawaii_1952_1","Museum
+samples","D. melanogater","Dried",NA,0.6,1,1952
+"SAMN38071677",1953,"University of Hawaii, Insect Museum","Destructive","Yes",21.961817,"Kauai, HI",-159.499054,"-","reverse",0,"Kauai1954_1_mel","Hawaii_1953_1","Museum
+samples","D. melanogater","Dried",NA,1.9,1.1,1953
+"SAMN38071668 ",1963,"Frost Entomological Museum","Non-Destructive","No",40.298022,"Lebanon Co, PA",-76.652817,"-","reverse",66.4,"Frost_03071963","Pennsylvania_1963_1","Museum
+samples","D. melanogater","Dried",NA,2.1,2.1,1963
+"SAMN38071669",1963,"Frost Entomological Museum","Non-Destructive","Yes",40.298022,"Lebanon Co, PA",-76.652817,"-","reverse",24.4,"Frost_03211963_1","Pennsylvania_1963_2","Museum
+samples","D. melanogater","Dried",NA,1.1,2,1963
+"SAMN38071684",1968,"University of Minnesota, Insect Collection","Destructive","No",45.497914,"St. Cloud, MN",-94.142052,"-","reverse",13,"StCloud1968_1","Minnesota_1968","Museum
+samples","D. melanogater","Dried",NA,0.9,1.7,1968
+"SAMN38071685",1969,"University of Minnesota, Insect Collection","Destructive","No",45.497914,"St. Cloud, MN",-94.142052,"-","reverse",38.6,"StCloud1969_1","Minnesota_1969","Museum
+samples","D. melanogater","Dried",NA,2.1,2,1969
+"SAMN38071686",1991,"University of Minnesota, Insect Collection","Destructive","No",45.497914,"St. Cloud, MN",-94.142052,"-","reverse",24.4,"StCloud1991_1","Minnesota_1991","Museum
+samples","D. melanogater","Dried",NA,1.7,1.9,1991
+"SAMN38071673",2003,"Frost Entomological Museum","Non-Destructive","No",40.298022,"Lebanon Co, PA",-76.652817,"4908","reverse",71.2,"Frost_4908","Pennsylvania_2003_1","Museum
+samples","Drosophilidae","Dried",NA,2.3,2.2,2003
+"SAMN38071672",2003,"Frost Entomological Museum","Non-Destructive","No",40.298022,"Lebanon Co, PA",-76.652817,"4887","reverse",13.9,"Frost_4887","Pennsylvania_2003_2","Museum
+samples","Drosophilidae","Dried",NA,1.7,2.1,2003
+"SAMN38071675",2003,"Frost Entomological Museum","Non-Destructive","No",40.298022,"Lebanon Co, PA",-76.652817,"5867","reverse",42,"Frost_5867","Pennsylvania_2003_3","Museum
+samples","Drosophilidae","Dried",NA,0.9,2,2003
+"SAMN38071676",2003,"Frost Entomological Museum","Non-Destructive","No",40.298022,"Lebanon Co, PA",-76.652817,"5873","reverse",120,"Frost_5873","Pennsylvania_2003_4","Museum
+samples","Drosophilidae","Dried",NA,2.4,2.2,2003
+"SAMN38071674",2003,"Frost Entomological Museum","Non-Destructive","No",40.298022,"Lebanon Co, PA",-76.652817,"5863","reverse",25.6,"Frost_5863","Pennsylvania_2003_5","Museum
+samples","Drosophilidae","Dried",NA,1.7,2.1,2003
+"SAMN38071666",2006,"The Davidson College Entomology Collection","Destructive","No",35.487331,"Davidson, NC",-80.84877,"-","reverse",19.6,"Davidson2006_1","NorthCarolina_2006_1","Museum
+samples","D. melanogater","Dried",NA,2.2,2,2006
+"SAMN38071667",2006,"The Davidson College Entomology Collection","Destructive","No",35.487331,"Davidson, NC",-80.84877,"-","reverse",56.8,"Davidson2006_2","NorthCarolina_2006_2","Museum
+samples","D. melanogater","Dried",NA,2.1,2.1,2006
+"-",2006,"The Davidson College Entomology Collection","Destructive","No",35.487331,"Davidson, NC",-80.84877,"-","reverse",0,"Davidson2006_3","NorthCarolina_2006_3","Museum
+samples","D. melanogater","Dried",NA,2,1.9,2006
+"SAMN38071680",2010,"University of Guelph, Centre for Biodiversity Genomics","Destructive","No",43.501662,"Puslinch Township, Ontario, Canada",-80.247625,"PHDIP1072-11","reverse",0,"PHDIP1072-11","Canada_2010_1","Museum
+samples","D. melanogater","Ethanol",NA,1.9,1.7,2010
+"-",1952,"University of Hawaii, Insect Museum","Destructive","Yes",21.961817,"Kauai, HI",-159.499054,"-","reverse",0,"Kauai1952_1_sim","Hawaii_1952_2","Museum
+samples","D. simulans","Dried",NA,-4.1,0.7,1952
+"-",1952,"University of Hawaii, Insect Museum","Destructive","Yes",21.961817,"Kauai, HI",-159.499054,"-","reverse",0,"Kauai1952_2_sim","Hawaii_1952_3","Museum
+samples","D. simulans","Dried",NA,0,0,1952
+"SAMN38071678",1953,"University of Hawaii, Insect Museum","Destructive","Yes",22.205821,"Kilauea, HI",-159.407812,"-","reverse",0,"Kilauea1953_1_sim","Hawaii_1953_2","Museum
+samples","D. simulans","Dried",NA,-7,1.2,1953
+"-",1958,"University of Hawaii, Insect Museum","Destructive","Yes",20.747778,"Maui, HI",-156.295724,"-","reverse",0,"Maui1958_1_sim","Hawaii_1958","Museum
+samples","D. simulans","Dried",NA,0.2,1,1958
+"-",1960,"University of Hawaii, Insect Museum","Destructive","Yes",21.472832,"Oahu, HI",-158.041353,"-","reverse",0,"Oahu1960_1_sim","Hawaii_1960","Museum
+samples","D. simulans","Dried",NA,0.8,1.2,1960
+"SAMN38071670",1963,"Frost Entomological Museum","Non-Destructive","No",40.298022,"Lebanon Co, PA",-76.652817,"-","reverse",84.6,"Frost_03211963_2","Pennsylvania_1963_3","Museum
+samples","D. simulans","Dried",NA,1.8,2.1,1963
+"SAMN38071671",1963,"Frost Entomological Museum","Non-Destructive","No",40.298022,"Lebanon Co, PA",-76.652817,"-","reverse",48,"Frost_03271963","Pennsylvania_1963_4","Museum
+samples","D. simulans","Dried",NA,1.5,2.1,1963
+"SAMN38071679",1965,"University of Hawaii, Insect Museum","Destructive","No",21.472832,"Oahu, HI",-158.041353,"-","reverse",0,"Oahu1965_1_sim","Hawaii_1965","Museum
+samples","D. simulans","Dried",NA,1.8,1.6,1965
+"SAMN38071683",2000,"Santa Barbara Museum of Natural History","Destructive","Yes",34.399682,"Santa Barbara, CA",-119.685234,"-","reverse",17.8,"SB_2000_sim_1","California_2000_1","Museum
+samples","D. simulans","Dried",NA,1.8,2,2000
+"SAMN38071682",2000,"Santa Barbara Museum of Natural History","Destructive","Yes",34.399682,"Santa Barbara, CA",-119.685234,"-","reverse",55.4,"SB_2000_mel_1","California_2000_2","Museum
+samples","D. simulans","Dried",NA,1.6,2,2000
+"SAMN38071681",2010,"University of Guelph, Centre for Biodiversity Genomics","Destructive","No",43.501662,"Puslinch Township, Ontario, Canada",-80.247625,"PHDIP946-11","reverse",17.8,"PHDIP946-11","Canada_2010_2","Museum
+samples","D. simulans","Ethanol",NA,1.4,1.9,2010
+"SAMN38071664",2011,"University of Guelph, Centre for Biodiversity Genomics","Destructive","Yes",34.252246,"Ventura Co, CA",-119.272977,"BBDIV1549-12","reverse",74.2,"BBDIV1549-12","California_2011_1","Museum
+samples","D. simulans","Ethanol",NA,2.2,2.1,2011
+"SAMN38071665",2011,"University of Guelph, Centre for Biodiversity Genomics","Destructive","Yes",34.252246,"Ventura Co, CA",-119.272977,"BBDIV1550-12","reverse",15.9,"BBDIV1550-12","California_2011_2","Museum
+samples","D. simulans","Ethanol",NA,0.9,2,2011
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"4WkDry_F_1","4WkDry_F_1","Experimental
+dried","melanogaster","Dried",4,NA,NA,2026
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"4WkDry_F_2","4WkDry_F_2","Experimental
+dried","melanogaster","Dried",4,NA,NA,2026
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"4WkDry_F_3","4WkDry_F_3","Experimental
+dried","melanogaster","Dried",4,NA,NA,2026
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"8WkDry_F_1","8WkDry_F_1","Experimental
+dried","melanogaster","Dried",8,NA,NA,2030
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"8WkDry_F_2","8WkDry_F_2","Experimental
+dried","melanogaster","Dried",8,NA,NA,2030
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"8WkDry_F_3","8WkDry_F_3","Experimental
+dried","melanogaster","Dried",8,NA,NA,2030
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"12WkDry_F_1","12WkDry_F_1","Experimental
+dried","melanogaster","Dried",12,NA,NA,2034
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"12WkDry_F_2","12WkDry_F_2","Experimental
+dried","melanogaster","Dried",12,NA,NA,2034
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"12WkDry_F_3","12WkDry_F_3","Experimental
+dried","melanogaster","Dried",12,NA,NA,2034
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"16WkDry_F_1","16WkDry_F_1","Experimental
+dried","melanogaster","Dried",16,NA,NA,2038
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"16WkDry_F_2","16WkDry_F_2","Experimental
+dried","melanogaster","Dried",16,NA,NA,2038
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"16WkDry_F_3","16WkDry_F_3","Experimental
+dried","melanogaster","Dried",16,NA,NA,2038
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"20WkDry_F_1","20WkDry_F_1","Experimental
+dried","melanogaster","Dried",20,NA,NA,2042
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"20WkDry_F_2","20WkDry_F_2","Experimental
+dried","melanogaster","Dried",20,NA,NA,2042
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"20WkDry_F_3","20WkDry_F_3","Experimental
+dried","melanogaster","Dried",20,NA,NA,2042
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"24WkDry_F_1","24WkDry_F_1","Experimental
+dried","melanogaster","Dried",24,NA,NA,2046
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"24WkDry_F_2","24WkDry_F_2","Experimental
+dried","melanogaster","Dried",24,NA,NA,2046
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"24WkDry_F_3","24WkDry_F_3","Experimental
+dried","melanogaster","Dried",24,NA,NA,2046
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"36WkDry_F_1","36WkDry_F_1","Experimental
+dried","melanogaster","Dried",36,NA,NA,2058
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"36WkDry_F_2","36WkDry_F_2","Experimental
+dried","melanogaster","Dried",36,NA,NA,2058
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"36WkDry_F_3","36WkDry_F_3","Experimental
+dried","melanogaster","Dried",36,NA,NA,2058
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"48WkDry_F_1","48WkDry_F_1","Experimental
+dried","melanogaster","Dried",48,NA,NA,2070
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"48WkDry_F_2","48WkDry_F_2","Experimental
+dried","melanogaster","Dried",48,NA,NA,2070
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"48WkDry_F_3","48WkDry_F_3","Experimental
+dried","melanogaster","Dried",48,NA,NA,2070
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"60WkDry_F_1","60WkDry_F_1","Experimental
+dried","melanogaster","Dried",60,NA,NA,2082
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"60WkDry_F_2","60WkDry_F_2","Experimental
+dried","melanogaster","Dried",60,NA,NA,2082
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"60WkDry_F_3","60WkDry_F_3","Experimental
+dried","melanogaster","Dried",60,NA,NA,2082
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"72WkDry_F_1","72WkDry_F_1","Experimental
+dried","melanogaster","Dried",72,NA,NA,2094
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"72WkDry_F_2","72WkDry_F_2","Experimental
+dried","melanogaster","Dried",72,NA,NA,2094
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"72WkDry_F_3","72WkDry_F_3","Experimental
+dried","melanogaster","Dried",72,NA,NA,2094
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"10Wk_F","10Wk_F","Fresh
+frozen","melanogaster","Fresh",10,NA,NA,2032
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"10Wk_M","10Wk_M","Fresh
+frozen","melanogaster","Fresh",10,NA,NA,2032
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"12Wk_F","12Wk_F","Fresh
+frozen","melanogaster","Fresh",12,NA,NA,2034
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"12Wk_M","12Wk_M","Fresh
+frozen","melanogaster","Fresh",12,NA,NA,2034
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"16Wk_F","16Wk_F","Fresh
+frozen","melanogaster","Fresh",16,NA,NA,2038
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"16Wk_M","16Wk_M","Fresh
+frozen","melanogaster","Fresh",16,NA,NA,2038
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"20Wk_F","20Wk_F","Fresh
+frozen","melanogaster","Fresh",20,NA,NA,2042
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"20Wk_M","20Wk_M","Fresh
+frozen","melanogaster","Fresh",20,NA,NA,2042
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"24Wk_F","24Wk_F","Fresh
+frozen","melanogaster","Fresh",24,NA,NA,2046
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"24Wk_M","24Wk_M","Fresh
+frozen","melanogaster","Fresh",24,NA,NA,2046
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"2Wk_F","2Wk_F","Fresh
+frozen","melanogaster","Fresh",2,NA,NA,2024
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"2Wk_M","2Wk_M","Fresh
+frozen","melanogaster","Fresh",2,NA,NA,2024
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"4Wk_F","4Wk_F","Fresh
+frozen","melanogaster","Fresh",4,NA,NA,2026
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"4Wk_M","4Wk_M","Fresh
+frozen","melanogaster","Fresh",4,NA,NA,2026
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"6Wk_F","6Wk_F","Fresh
+frozen","melanogaster","Fresh",6,NA,NA,2028
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"6Wk_M","6Wk_M","Fresh
+frozen","melanogaster","Fresh",6,NA,NA,2028
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"8Wk_F","8Wk_F","Fresh
+frozen","melanogaster","Fresh",8,NA,NA,2030
+NA,2022,"Colorado State University",NA,NA,NA,"Fort Collins, CO",NA,NA,"reverse",NA,"8Wk_M","8Wk_M","Fresh
+frozen","melanogaster","Fresh",8,NA,NA,2030
+NA,2022,"Colorado State University",NA,"Y",NA,"Fort Collins, CO",NA,NA,"reverse",NA,"FoCo17_Pos","Pos_control_1","Positive
+control","melanogaster","Fresh",0.01,NA,NA,2022.01
+NA,2022,"Colorado State University",NA,"Y",NA,"Fort Collins, CO",NA,NA,"reverse",NA,"PosCtrl_Pool1","Pos_control_2","Positive
+control","melanogaster","Fresh",0.02,NA,NA,2022.02
+NA,2022,"Colorado State University",NA,"N",NA,"Fort Collins, CO",NA,NA,"reverse",NA,"cDNA_Neg","Neg_control_1","Negative
+control","melanogaster","Fresh",0.03,NA,NA,2022.03
+NA,2022,"Colorado State University",NA,"N",NA,"Fort Collins, CO",NA,NA,"reverse",NA,"Water_NegCtrl","Neg_control_2","Negative
+control","melanogaster","Fresh",0.04,NA,NA,2022.04
+NA,2022,"Colorado State University",NA,"N",NA,"Fort Collins, CO",NA,NA,"reverse",NA,"NegCtrl_NewPrep","Neg_control_3","Negative
+control","melanogaster","Fresh",0.05,NA,NA,2022.05

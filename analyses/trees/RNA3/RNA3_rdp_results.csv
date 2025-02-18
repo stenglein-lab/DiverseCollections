@@ -1,0 +1,47 @@
+,,,Breakpoint Positions
+,,In Alignment, ,In Recombinant Sequence, ,Relative to MH384337_-_orf1_CDS Galbut virus strain MEL216G se,, , , , , , Detection Methods
+Recombination Event Number, Number In .RDP File, Begin, End,Begin, End,Begin, End, Recombinant Sequence(s), Minor Parental Sequence(s), Major Parental Sequence(s), RDP, GENECONV, Bootscan, Maxchi, Chimaera, SiSscan,PhylPro, LARD, 3Seq
+ 1 ,1~, 146, 248, 143, 224, 134, 233,^SRX10234780_RNA3_-_hypothetical_protein_CDS 310,16,PQ624844_-_hypothetical_protein_CDS D_mel_USA_2020,MH384362_-_orf1_CDS Galbut virus strain MEL191G se, 3.03003297250133E-02,NS, 1.31267360260919E-02, 4.20915541053024E-03,NS, 2.95701235926309E-07,NS,NS,NS,
+ 1,,,,,,,,OR820597_-_hypothetical_protein_CDS Galbut virus i,PQ624842_-_hypothetical_protein_CDS D_mel_USA_2020,
+ 1,,,,,,,,OR820601_-_hypothetical_protein_CDS Galbut virus i,PQ624890_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,SRX10234790_RNA3_-_hypothetical_protein_CDS 262,16,PQ624891_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,SRX10234788_RNA3_-_hypothetical_protein_CDS 545,04,PQ624917_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,SRX10234789_RNA3_-_hypothetical_protein_CDS 1,218 ,PQ624925_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,SRX10234777_RNA3_-_hypothetical_protein_CDS 152,82,PQ624870_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,SRX10234781_RNA3_-_hypothetical_protein_CDS 608,06,PQ624893_-_hyothetical_protein_CDS D_mel_USA_2023_,
+ 1,,,,,,,,SRX10234776_RNA3_-_hypothetical_protein_CDS 1,104,,PQ624916_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,SRX10234778_RNA3_-_hypothetical_protein_CDS 131,54[T],PQ624918_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,SRX10234787_RNA3_-_hypothetical_protein_CDS 740,82[T],PQ624910_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,SRX10234782_RNA3_-_hypothetical_protein_CDS 175,06[T],PQ624922_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,SRX10234786_RNA3_-_hypothetical_protein_CDS 190,99[T],PQ624871_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,SRX10234784_RNA3_-_hypothetical_protein_CDS 1,247,[T],PQ624881_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,SRX10234779_RNA3_-_hypothetical_protein_CDS 282,57[T],PQ624908_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,SRX10234785_RNA3_-_hypothetical_protein_CDS 269,91[T],PQ624913_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624926_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624927_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624928_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624847_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624946_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624865_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624873_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624882_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624883_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624876_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624879_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624887_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624930_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624851_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624889_-_hypothetical_protein_CDS D_mel_USA_2023,
+ 1,,,,,,,,,PQ624929_-_hypothetical_protein_CDS D_mel_USA_2023,
+
+Table Key:
+~            = It is possible that this apparent recombination signal could have been caused by an evolutionary
+               process other than recombination.
+*            = The actual breakpoint position is undetermined (it was most likely overprinted by a subsequent 
+               recombination event).
+^            = The recombinant sequence may have been misidentified (one of the identified parents might be the recombinant)
+Minor Parent = Parent contributing the smaller fraction of sequence.
+Major Parent = Parent contributing the larger fraction of sequence.
+Unknown      = Only one parent and a recombinant need be in the alignment for a recombination event to be detectable.
+               The sequence listed as unknown was used to infer the existance of a missing parental sequence.
+NS           = No significant P-value was recorded for this recombination event using this method.

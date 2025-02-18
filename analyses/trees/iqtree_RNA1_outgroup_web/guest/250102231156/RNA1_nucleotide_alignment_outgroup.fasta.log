@@ -1,0 +1,468 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fermat (AVX2, FMA3, 1009 GB RAM)
+Command: ../../iqtree -s RNA1_nucleotide_alignment_outgroup.fasta -st DNA -m TEST -bb 1000 -alrt 1000
+Seed:    244418 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Jan  2 23:12:02 2025
+Kernel:  AVX+FMA - 1 threads (128 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 128 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file RNA1_nucleotide_alignment_outgroup.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 153 sequences with 1752 columns, 495 distinct patterns
+375 parsimony-informative, 432 singleton sites, 945 constant sites
+                                      Gap/Ambiguity  Composition  p-value
+   1  galbut_EVE_from_Wallace_supp_fig_S10    4.34%    passed     99.55%
+   2  KX884152                                3.88%    passed     99.98%
+   3  PQ625137                                3.88%    passed     99.91%
+   4  PQ625125                                4.34%    passed     99.81%
+   5  OR729095                                5.08%    passed     99.96%
+   6  OR729099                                4.85%    passed     99.91%
+   7  OR729100                                4.74%    passed     99.96%
+   8  OR729096                                4.28%    passed     99.73%
+   9  OR729103                                4.62%    passed     99.57%
+  10  OR729106                                4.62%    passed     99.57%
+  11  OR729110                                4.62%    passed     99.57%
+  12  OR729112                                4.45%    passed     99.62%
+  13  PQ625101                                4.11%    passed     99.32%
+  14  PQ625139                                4.11%    passed     99.67%
+  15  PQ625060                                4.51%    passed     99.29%
+  16  PQ625098                                4.85%    passed     99.60%
+  17  PQ625110                                4.34%    passed     98.65%
+  18  PQ625112                                3.71%    passed     99.81%
+  19  PQ625070                                3.77%    passed     99.85%
+  20  PQ625086                                3.77%    passed     99.70%
+  21  OR729104                                4.79%    passed     99.68%
+  22  OR729116                                4.97%    passed     99.55%
+  23  OR729111                                4.79%    passed     99.49%
+  24  PQ625067                                4.39%    passed     99.64%
+  25  OR729098                                4.85%    passed     99.33%
+  26  OR729101                                5.02%    passed     99.03%
+  27  OR729117                                4.91%    passed     99.11%
+  28  OR729102                                4.97%    passed     99.27%
+  29  OR729107                                4.74%    passed     99.31%
+  30  OR729108                                4.79%    passed     99.12%
+  31  OR729109                                6.51%    passed     99.77%
+  32  OR729113                                4.85%    passed     98.87%
+  33  OR729114                                5.14%    passed     99.27%
+  34  OR729115                                5.19%    passed     98.79%
+  35  OR729105                                4.45%    passed     99.71%
+  36  PQ625059                                4.00%    passed     99.97%
+  37  PQ625072                                4.00%    passed     99.99%
+  38  PQ625073                                4.05%    passed     99.90%
+  39  PQ625138                                4.00%    passed     99.95%
+  40  PQ625140                                4.17%    passed     99.99%
+  41  PQ625066                                4.00%    passed     99.63%
+  42  PQ625071                                4.00%    passed     99.63%
+  43  PQ625106                                3.82%    passed     99.91%
+  44  PQ625076                                3.82%    passed     99.96%
+  45  PQ625108                                4.00%    passed     99.86%
+  46  PQ625128                                3.77%    passed     99.92%
+  47  PQ625142                                3.82%    passed     99.89%
+  48  PQ625152                                3.82%    passed     99.89%
+  49  PQ625146                                3.71%    passed     99.91%
+  50  PQ625150                                3.71%    passed     99.91%
+  51  PQ625143                                3.77%    passed     99.79%
+  52  PQ625145                                4.91%    passed     99.97%
+  53  PQ625151                                7.53%    passed     99.66%
+  54  PQ625148                                4.62%    passed     99.97%
+  55  PQ625147                                4.62%    passed     99.92%
+  56  PQ625149                                6.96%    passed     99.37%
+  57  PQ625136                                4.11%    passed     99.80%
+  58  MH384353                                4.79%    passed     99.16%
+  59  MH384372                                4.79%    passed     99.16%
+  60  MH384378                                4.79%    passed     99.16%
+  61  MH384364                                4.79%    passed     99.68%
+  62  PQ625063                                4.45%    passed     99.62%
+  63  PQ625120                                3.88%    passed     99.87%
+  64  PQ625153                                4.17%    passed     99.94%
+  65  MT742160                                3.82%    passed     99.51%
+  66  MT742164                                3.71%    passed     99.27%
+  67  OR729094                                4.85%    passed     97.94%
+  68  PQ625074                                3.82%    passed     99.08%
+  69  OR820575                                3.88%    passed     99.37%
+  70  PQ625062                                3.88%    passed     99.88%
+  71  PQ625094                                3.88%    passed     99.79%
+  72  PQ625095                                3.82%    passed     99.72%
+  73  PQ625114                                3.77%    passed     99.79%
+  74  PQ625065                                3.77%    passed     99.65%
+  75  PQ625075                                3.88%    passed     99.84%
+  76  PQ625115                                3.94%    passed     99.26%
+  77  PQ625111                                3.94%    passed     99.17%
+  78  PQ625079                                4.85%    passed     98.91%
+  79  PQ625090                                4.85%    passed     98.91%
+  80  PQ625088                                6.16%    passed     99.18%
+  81  PQ625141                                6.34%    passed     99.57%
+  82  OR729093                                4.34%    passed     99.69%
+  83  OR729097                                4.39%    passed     99.77%
+  84  PQ625080                                5.25%    passed     96.92%
+  85  PQ625085                                6.68%    passed     99.03%
+  86  PQ625113                                4.00%    passed     99.69%
+  87  PQ625096                                7.36%    passed     99.53%
+  88  PQ625103                                4.05%    passed     99.99%
+  89  PQ625119                                4.05%    passed     99.60%
+  90  OR820562                                5.25%    passed     98.01%
+  91  PQ625121                                4.05%    passed     98.56%
+  92  OR820569                                5.48%    passed     98.88%
+  93  PQ625126                                7.53%    passed     99.30%
+  94  PQ625117                                5.19%    passed     99.82%
+  95  PQ625083                                8.39%    passed     98.50%
+  96  PQ625102                                5.76%    passed     99.78%
+  97  MH384360                                4.79%    passed     98.54%
+  98  PQ625069                                4.74%    passed     95.97%
+  99  MH384335                                5.19%    passed     98.10%
+ 100  PQ625078                                4.62%    passed     96.74%
+ 101  PQ625061                                5.19%    passed     97.40%
+ 102  PQ625104                                4.79%    passed     98.47%
+ 103  PQ625107                                4.17%    passed     99.01%
+ 104  PQ625105                                4.34%    passed     97.99%
+ 105  PQ625118                                3.94%    passed     99.72%
+ 106  PQ625127                                4.00%    passed     99.63%
+ 107  OR820588                                7.31%    passed     96.40%
+ 108  PQ625057                                5.94%    passed     88.95%
+ 109  PQ625058                                6.22%    passed     90.37%
+ 110  PQ625082                                5.08%    passed     80.73%
+ 111  PQ625091                                7.02%    passed     67.65%
+ 112  PQ625116                                4.22%    passed     80.76%
+ 113  PQ625131                                4.45%    passed     86.40%
+ 114  PQ625132                                4.11%    passed     81.86%
+ 115  PQ625133                                4.28%    passed     80.78%
+ 116  PQ625064                                6.16%    passed     92.16%
+ 117  PQ625100                                5.08%    passed     93.92%
+ 118  PQ625123                                4.34%    passed     94.75%
+ 119  PQ625130                                3.94%    passed     86.77%
+ 120  PQ625068                                4.28%    passed     96.58%
+ 121  PQ625144                                4.17%    passed     98.48%
+ 122  PQ625081                                6.96%    passed     92.51%
+ 123  PQ625109                                4.85%    passed     96.74%
+ 124  PQ625122                                4.00%    passed     93.80%
+ 125  PQ625124                                3.82%    passed     93.71%
+ 126  PQ625129                                3.94%    passed     78.65%
+ 127  PQ625099                                5.14%    passed     92.64%
+ 128  PQ625134                                4.85%    passed     94.85%
+ 129  PQ625077                                6.79%    passed     75.03%
+ 130  PQ625084                               11.47%    passed     83.09%
+ 131  PQ625089                                6.56%    passed     79.79%
+ 132  PQ625087                                5.25%    passed     87.66%
+ 133  PQ625093                                6.45%    passed     80.03%
+ 134  PQ625135                                5.14%    passed     87.58%
+ 135  PQ625092                                6.22%    passed     84.07%
+ 136  PQ625097                                4.68%    passed     86.36%
+ 137  MW976823                                4.97%    passed     93.26%
+ 138  OR820596                                4.68%    passed     93.05%
+ 139  OR820600                                4.39%    passed     96.46%
+ 140  MW976827                                4.97%    passed     99.28%
+ 141  MW976829                                4.97%    passed     98.47%
+ 142  MW976824                                4.97%    passed     97.04%
+ 143  MW976835                                4.97%    passed     97.82%
+ 144  MW976825                                4.97%    passed     97.93%
+ 145  MW976828                                4.97%    passed     97.82%
+ 146  MW976831                                4.97%    passed     97.93%
+ 147  MW976834                                4.97%    passed     96.72%
+ 148  MW976830                                4.97%    passed     98.65%
+ 149  MW976826                                4.97%    passed     99.12%
+ 150  MW976832                                4.97%    passed     99.05%
+ 151  MW976836                                5.02%    passed     95.34%
+ 152  MW976833                                6.51%    passed     98.37%
+ 153  outgroup_Bactrocera_MW310330            1.31%    passed     22.57%
+****  TOTAL                                   4.79%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: OR729106 is identical to OR729103 but kept for subsequent analysis
+NOTE: PQ625071 is identical to PQ625066 but kept for subsequent analysis
+NOTE: PQ625152 is identical to PQ625142 but kept for subsequent analysis
+NOTE: PQ625150 is identical to PQ625146 but kept for subsequent analysis
+NOTE: MH384372 is identical to MH384353 but kept for subsequent analysis
+NOTE: PQ625090 is identical to PQ625079 but kept for subsequent analysis
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: OR729110 (identical to OR729103) is ignored but added at the end
+NOTE: MH384378 (identical to MH384353) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to RNA1_nucleotide_alignment_outgroup.fasta.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.016 seconds
+NOTE: ModelFinder requires 11 MB RAM!
+ModelFinder will test 88 DNA models (sample size: 1752) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            10836.634    299 22271.268    22394.822    23906.354
+  2  JC+I          10516.795    300 21633.589    21758.055    23274.143
+  3  JC+G4         10270.249    300 21140.499    21264.964    22781.053
+  4  JC+I+G4       10259.562    301 21121.124    21246.506    22767.146
+  5  F81+F         10822.065    302 22248.130    22374.432    23899.621
+  6  F81+F+I       10495.174    303 21596.348    21723.574    23253.307
+  7  F81+F+G4      10242.297    303 21090.593    21217.820    22747.553
+  8  F81+F+I+G4    10231.759    304 21071.517    21199.672    22733.945
+  9  K2P           10392.191    300 21384.383    21508.849    23024.937
+ 10  K2P+I         9966.095     301 20534.190    20659.572    22180.212
+ 11  K2P+G4        9718.335     301 20038.670    20164.052    21684.692
+ 12  K2P+I+G4      9705.231     302 20014.462    20140.764    21665.953
+ 13  HKY+F         10358.541    303 21323.082    21450.309    22980.042
+ 14  HKY+F+I       9924.293     304 20456.585    20584.740    22119.013
+ 15  HKY+F+G4      9660.402     304 19928.803    20056.958    21591.231
+ 16  HKY+F+I+G4    9647.464     305 19904.928    20034.015    21572.825
+ 17  TNe           10357.486    301 21316.971    21442.353    22962.994
+ 18  TNe+I         9940.880     302 20485.761    20612.063    22137.252
+ 19  TNe+G4        9700.918     302 20005.835    20132.138    21657.326
+ 20  TNe+I+G4      9688.550     303 19983.100    20110.326    21640.059
+ 21  TN+F          10320.887    304 21249.774    21377.929    22912.202
+ 22  TN+F+I        9897.825     305 20405.650    20534.737    22073.547
+ 23  TN+F+G4       9643.875     305 19897.751    20026.838    21565.647
+ 24  TN+F+I+G4     9631.489     306 19874.978    20005.001    21548.343
+ 25  K3P           10390.591    301 21383.183    21508.565    23029.205
+ 26  K3P+I         9963.636     302 20531.273    20657.575    22182.764
+ 27  K3P+G4        9716.125     302 20036.251    20162.553    21687.742
+ 28  K3P+I+G4      9703.312     303 20012.623    20139.850    21669.583
+ 29  K3Pu+F        10357.910    304 21323.820    21451.975    22986.248
+ 30  K3Pu+F+I      9922.805     305 20455.609    20584.697    22123.506
+ 31  K3Pu+F+G4     9659.565     305 19929.129    20058.216    21597.026
+ 32  K3Pu+F+I+G4   9646.793     306 19905.586    20035.609    21578.951
+ 33  TPM2+F        10343.248    304 21294.497    21422.651    22956.925
+ 34  TPM2+F+I      9912.663     305 20435.325    20564.412    22103.222
+ 35  TPM2+F+G4     9653.977     305 19917.954    20047.041    21585.850
+ 36  TPM2+F+I+G4   9641.281     306 19894.562    20024.586    21567.928
+ 37  TPM2u+F       10343.251    304 21294.501    21422.656    22956.929
+ 38  TPM2u+F+I     9912.665     305 20435.330    20564.417    22103.227
+ 39  TPM2u+F+G4    9653.979     305 19917.958    20047.045    21585.854
+ 40  TPM2u+F+I+G4  9641.357     306 19894.715    20024.738    21568.080
+ 41  TPM3+F        10358.560    304 21325.119    21453.274    22987.547
+ 42  TPM3+F+I      9922.532     305 20455.063    20584.151    22122.960
+ 43  TPM3+F+G4     9660.061     305 19930.122    20059.209    21598.019
+ 44  TPM3+F+I+G4   9647.456     306 19906.913    20036.936    21580.278
+ 45  TPM3u+F       10358.561    304 21325.123    21453.278    22987.551
+ 46  TPM3u+F+I     9922.534     305 20455.067    20584.155    22122.964
+ 47  TPM3u+F+G4    9660.063     305 19930.126    20059.213    21598.022
+ 48  TPM3u+F+I+G4  9647.520     306 19907.041    20037.064    21580.406
+ 49  TIMe          10355.853    302 21315.706    21442.008    22967.197
+ 50  TIMe+I        9938.411     303 20482.822    20610.048    22139.781
+ 51  TIMe+G4       9698.669     303 20003.338    20130.564    21660.297
+ 52  TIMe+I+G4     9686.791     304 19981.582    20109.737    21644.010
+ 53  TIM+F         10320.127    305 21250.255    21379.342    22918.151
+ 54  TIM+F+I       9896.294     306 20404.588    20534.612    22077.953
+ 55  TIM+F+G4      9642.931     306 19897.862    20027.885    21571.227
+ 56  TIM+F+I+G4    9630.929     307 19875.857    20006.821    21554.691
+ 57  TIM2e         10333.806    302 21271.612    21397.914    22923.103
+ 58  TIM2e+I       9921.113     303 20448.227    20575.453    22105.186
+ 59  TIM2e+G4      9685.725     303 19977.449    20104.676    21634.409
+ 60  TIM2e+I+G4    9673.809     304 19955.618    20083.772    21618.046
+ 61  TIM2+F        10306.144    305 21222.288    21351.375    22890.184
+ 62  TIM2+F+I      9886.122     306 20384.243    20514.267    22057.608
+ 63  TIM2+F+G4     9637.268     306 19886.537    20016.560    21559.902
+ 64  TIM2+F+I+G4   9625.265     307 19864.531    19995.495    21543.365
+ 65  TIM3e         10356.442    302 21316.884    21443.186    22968.375
+ 66  TIM3e+I       9935.767     303 20477.534    20604.761    22134.494
+ 67  TIM3e+G4      9697.577     303 20001.153    20128.380    21658.113
+ 68  TIM3e+I+G4    9685.538     304 19979.075    20107.230    21641.503
+ 69  TIM3+F        10320.879    305 21251.759    21380.846    22919.655
+ 70  TIM3+F+I      9895.901     306 20403.803    20533.826    22077.168
+ 71  TIM3+F+G4     9643.378     306 19898.755    20028.779    21572.120
+ 72  TIM3+F+I+G4   9631.419     307 19876.839    20007.803    21555.672
+ 73  TVMe          10367.598    303 21341.196    21468.423    22998.156
+ 74  TVMe+I        9941.557     304 20491.114    20619.269    22153.542
+ 75  TVMe+G4       9700.243     304 20008.487    20136.641    21670.915
+ 76  TVMe+I+G4     9687.467     305 19984.933    20114.020    21652.830
+ 77  TVM+F         10343.261    306 21298.522    21428.546    22971.888
+ 78  TVM+F+I       9910.882     307 20435.764    20566.728    22114.597
+ 79  TVM+F+G4      9653.634     307 19921.267    20052.231    21600.101
+ 80  TVM+F+I+G4    9641.203     308 19898.405    20030.314    21582.707
+ 81  SYM           10332.544    304 21273.088    21401.243    22935.516
+ 82  SYM+I         9915.871     305 20441.743    20570.830    22109.639
+ 83  SYM+G4        9682.275     305 19974.550    20103.637    21642.447
+ 84  SYM+I+G4      9670.082     306 19952.163    20082.187    21625.528
+ 85  GTR+F         10306.121    307 21226.242    21357.206    22905.076
+ 86  GTR+F+I       9884.192     308 20384.383    20516.292    22068.686
+ 87  GTR+F+G4      9636.761     308 19889.523    20021.432    21573.825
+ 88  GTR+F+I+G4    9624.722     309 19867.444    20000.302    21557.215
+Akaike Information Criterion:           TIM2+F+I+G4
+Corrected Akaike Information Criterion: TIM2+F+I+G4
+Bayesian Information Criterion:         TIM2+F+I+G4
+Best-fit model: TIM2+F+I+G4 chosen according to BIC
+
+All model information printed to RNA1_nucleotide_alignment_outgroup.fasta.model.gz
+CPU time for ModelFinder: 22.116 seconds (0h:0m:22s)
+Wall-clock time for ModelFinder: 22.395 seconds (0h:0m:22s)
+Generating 1000 samples for ultrafast bootstrap (seed: 244418)...
+
+NOTE: 11 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.195 / LogL: -9637.318
+Init pinv, alpha: 0.060, 1.000 / Estimate: 0.065, 0.215 / LogL: -9632.427
+Init pinv, alpha: 0.120, 1.000 / Estimate: 0.126, 0.239 / LogL: -9628.933
+Init pinv, alpha: 0.180, 1.000 / Estimate: 0.183, 0.271 / LogL: -9626.317
+Init pinv, alpha: 0.240, 1.000 / Estimate: 0.234, 0.309 / LogL: -9624.541
+Init pinv, alpha: 0.300, 1.000 / Estimate: 0.257, 0.326 / LogL: -9622.892
+Init pinv, alpha: 0.360, 1.000 / Estimate: 0.265, 0.327 / LogL: -9620.820
+Init pinv, alpha: 0.420, 1.000 / Estimate: 0.273, 0.329 / LogL: -9618.763
+Init pinv, alpha: 0.479, 1.000 / Estimate: 0.280, 0.329 / LogL: -9616.614
+Init pinv, alpha: 0.539, 1.000 / Estimate: 0.288, 0.331 / LogL: -9614.454
+Optimal pinv,alpha: 0.288, 0.331 / LogL: -9614.454
+
+Parameters optimization took 16.696 sec
+Computing ML distances based on estimated model parameters... 0.176 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.092 seconds
+Log-likelihood of BIONJ tree: -9669.145
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.496 second
+Computing log-likelihood of 98 initial trees ... 3.695 seconds
+Current best score: -9614.454
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -9608.520
+Iteration 10 / LogL: -9618.537 / Time: 0h:0m:30s
+Iteration 20 / LogL: -9617.224 / Time: 0h:0m:38s
+Finish initializing candidate tree set (20)
+Current best tree score: -9608.520 / CPU time: 20.737
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25: -9607.878
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27: -9604.271
+Iteration 30 / LogL: -9616.388 / Time: 0h:0m:45s (0h:2m:31s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 35: -9603.603
+Iteration 40 / LogL: -9604.701 / Time: 0h:0m:51s (0h:2m:6s left)
+Iteration 50 / LogL: -9604.600 / Time: 0h:0m:58s (0h:1m:41s left)
+Log-likelihood cutoff on original alignment: -9641.852
+Iteration 60 / LogL: -9603.886 / Time: 0h:1m:6s (0h:1m:23s left)
+Iteration 70 / LogL: -9603.847 / Time: 0h:1m:12s (0h:1m:8s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 80: -9603.534
+Iteration 80 / LogL: -9603.534 / Time: 0h:1m:20s (0h:1m:41s left)
+Iteration 90 / LogL: -9607.776 / Time: 0h:1m:28s (0h:1m:29s left)
+Iteration 100 / LogL: -9604.358 / Time: 0h:1m:35s (0h:1m:17s left)
+Log-likelihood cutoff on original alignment: -9641.276
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.958
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 102: -9603.492
+Iteration 110 / LogL: -9603.636 / Time: 0h:1m:43s (0h:1m:27s left)
+Iteration 120 / LogL: -9604.629 / Time: 0h:1m:50s (0h:1m:15s left)
+Iteration 130 / LogL: -9603.545 / Time: 0h:1m:56s (0h:1m:5s left)
+Iteration 140 / LogL: -9608.120 / Time: 0h:2m:4s (0h:0m:55s left)
+BETTER TREE FOUND at iteration 142: -9603.486
+Iteration 150 / LogL: -9603.609 / Time: 0h:2m:10s (0h:1m:20s left)
+Log-likelihood cutoff on original alignment: -9641.276
+Iteration 160 / LogL: -9618.715 / Time: 0h:2m:18s (0h:1m:11s left)
+Iteration 170 / LogL: -9603.492 / Time: 0h:2m:25s (0h:1m:1s left)
+Iteration 180 / LogL: -9609.877 / Time: 0h:2m:32s (0h:0m:52s left)
+Iteration 190 / LogL: -9618.541 / Time: 0h:2m:39s (0h:0m:43s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 196: -9603.453
+Iteration 200 / LogL: -9603.503 / Time: 0h:2m:46s (0h:1m:20s left)
+Log-likelihood cutoff on original alignment: -9641.276
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.977
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 210 / LogL: -9618.734 / Time: 0h:2m:54s (0h:1m:15s left)
+Iteration 220 / LogL: -9664.706 / Time: 0h:3m:1s (0h:1m:6s left)
+Iteration 230 / LogL: -9605.820 / Time: 0h:3m:8s (0h:0m:57s left)
+Iteration 240 / LogL: -9604.255 / Time: 0h:3m:15s (0h:0m:49s left)
+Iteration 250 / LogL: -9607.772 / Time: 0h:3m:23s (0h:0m:40s left)
+Log-likelihood cutoff on original alignment: -9641.276
+Iteration 260 / LogL: -9618.650 / Time: 0h:3m:31s (0h:0m:32s left)
+Iteration 270 / LogL: -9607.223 / Time: 0h:3m:38s (0h:0m:24s left)
+Iteration 280 / LogL: -9628.464 / Time: 0h:3m:46s (0h:0m:16s left)
+Iteration 290 / LogL: -9610.947 / Time: 0h:3m:54s (0h:0m:8s left)
+BETTER TREE FOUND at iteration 292: -9603.449
+Iteration 300 / LogL: -9606.204 / Time: 0h:4m:1s (0h:1m:14s left)
+Log-likelihood cutoff on original alignment: -9641.896
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.989
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 310 / LogL: -9603.486 / Time: 0h:4m:9s (0h:1m:12s left)
+BETTER TREE FOUND at iteration 316: -9603.445
+Iteration 320 / LogL: -9603.563 / Time: 0h:4m:16s (0h:1m:17s left)
+Iteration 330 / LogL: -9639.922 / Time: 0h:4m:24s (0h:1m:9s left)
+BETTER TREE FOUND at iteration 340: -9603.445
+Iteration 340 / LogL: -9603.445 / Time: 0h:4m:31s (0h:1m:20s left)
+BETTER TREE FOUND at iteration 350: -9603.440
+Iteration 350 / LogL: -9603.440 / Time: 0h:4m:38s (0h:1m:19s left)
+Log-likelihood cutoff on original alignment: -9641.896
+Iteration 360 / LogL: -9608.527 / Time: 0h:4m:46s (0h:1m:11s left)
+Iteration 370 / LogL: -9603.476 / Time: 0h:4m:54s (0h:1m:3s left)
+Iteration 380 / LogL: -9603.480 / Time: 0h:5m:1s (0h:0m:55s left)
+BETTER TREE FOUND at iteration 388: -9603.434
+BETTER TREE FOUND at iteration 389: -9603.432
+Iteration 390 / LogL: -9603.480 / Time: 0h:5m:8s (0h:1m:18s left)
+BETTER TREE FOUND at iteration 396: -9603.426
+Iteration 400 / LogL: -9603.476 / Time: 0h:5m:16s (0h:1m:16s left)
+Log-likelihood cutoff on original alignment: -9641.896
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.995
+Iteration 410 / LogL: -9605.813 / Time: 0h:5m:23s (0h:1m:11s left)
+Iteration 420 / LogL: -9608.872 / Time: 0h:5m:30s (0h:1m:3s left)
+Iteration 430 / LogL: -9604.346 / Time: 0h:5m:37s (0h:0m:55s left)
+BETTER TREE FOUND at iteration 432: -9603.426
+BETTER TREE FOUND at iteration 440: -9603.423
+Iteration 440 / LogL: -9603.423 / Time: 0h:5m:48s (0h:1m:19s left)
+Iteration 450 / LogL: -9603.459 / Time: 0h:6m:0s (0h:1m:12s left)
+Log-likelihood cutoff on original alignment: -9641.896
+Iteration 460 / LogL: -9718.206 / Time: 0h:6m:13s (0h:1m:5s left)
+Iteration 470 / LogL: -9603.463 / Time: 0h:6m:25s (0h:0m:57s left)
+Iteration 480 / LogL: -9604.140 / Time: 0h:6m:38s (0h:0m:49s left)
+Iteration 490 / LogL: -9603.424 / Time: 0h:6m:51s (0h:0m:42s left)
+Iteration 500 / LogL: -9603.488 / Time: 0h:7m:4s (0h:0m:34s left)
+Log-likelihood cutoff on original alignment: -9641.896
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.993
+Iteration 510 / LogL: -9607.670 / Time: 0h:7m:17s (0h:1m:17s left)
+Iteration 520 / LogL: -9603.490 / Time: 0h:7m:29s (0h:1m:9s left)
+Iteration 530 / LogL: -9604.517 / Time: 0h:7m:42s (0h:1m:1s left)
+Iteration 540 / LogL: -9603.474 / Time: 0h:7m:55s (0h:0m:52s left)
+TREE SEARCH COMPLETED AFTER 541 ITERATIONS / Time: 0h:7m:56s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -9603.423
+2. Current log-likelihood: -9603.405
+3. Current log-likelihood: -9603.390
+4. Current log-likelihood: -9603.378
+5. Current log-likelihood: -9603.367
+Optimal log-likelihood: -9603.357
+Rate parameters:  A-C: 2.19799  A-G: 14.20208  A-T: 2.19799  C-G: 1.00000  C-T: 25.16028  G-T: 1.00000
+Base frequencies:  A: 0.296  C: 0.207  G: 0.210  T: 0.287
+Proportion of invariable sites: 0.265
+Gamma shape alpha: 0.307
+Parameters optimization took 5 rounds (0.602 sec)
+BEST SCORE FOUND : -9603.357
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+6.212 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file RNA1_nucleotide_alignment_outgroup.fasta.splits.nex
+Total tree length: 16.714
+
+Total number of iterations: 541
+CPU time used for tree search: 456.480 sec (0h:7m:36s)
+Wall-clock time used for tree search: 459.359 sec (0h:7m:39s)
+Total CPU time used: 480.984 sec (0h:8m:0s)
+Total wall-clock time used: 484.298 sec (0h:8m:4s)
+
+Computing bootstrap consensus tree...
+Reading input file RNA1_nucleotide_alignment_outgroup.fasta.splits.nex...
+151 taxa and 1832 splits.
+Consensus tree written to RNA1_nucleotide_alignment_outgroup.fasta.contree
+Reading input trees file RNA1_nucleotide_alignment_outgroup.fasta.contree
+Log-likelihood of consensus tree: -9615.451
+
+Analysis results written to: 
+  IQ-TREE report:                RNA1_nucleotide_alignment_outgroup.fasta.iqtree
+  Maximum-likelihood tree:       RNA1_nucleotide_alignment_outgroup.fasta.treefile
+  Likelihood distances:          RNA1_nucleotide_alignment_outgroup.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          RNA1_nucleotide_alignment_outgroup.fasta.splits.nex
+  Consensus tree:                RNA1_nucleotide_alignment_outgroup.fasta.contree
+  Screen log file:               RNA1_nucleotide_alignment_outgroup.fasta.log
+
+Date and Time: Thu Jan  2 23:20:30 2025

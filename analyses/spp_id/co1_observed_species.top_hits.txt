@@ -1,0 +1,8 @@
+co1_species	n
+Drosophila_melanogaster	294
+Phortica_saltiaristula	5
+Drosophila_affinis	2
+Drosophila_simulans	2
+Mycodrosophila_sp	1
+Phortica_melanopous	1
+Phortica_pavriarista	1

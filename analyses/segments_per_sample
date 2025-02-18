@@ -1,0 +1,97 @@
+#!/usr/bin/env perl
+
+use strict;
+use Getopt::Long;
+use Data::Dumper;
+
+my $print_usage = 0;
+
+my $usage = <<USAGE;
+
+  This script takes a fasta file with all DC galbut virus sequences
+  and outputs the number of genotypes of each segment in each sample
+
+  Mark Stenglein,  10/21/2024
+
+  Usage: $0 [-h] all_fasta
+
+   [-h]          print this message
+
+USAGE
+
+if ((scalar @ARGV == 0) and -t STDIN) { print $usage and exit; }
+
+GetOptions ("h" => \$print_usage);
+
+my $all_fasta_file = shift or die $usage;
+
+open (my $all_fasta_fh, "<", $all_fasta_file) or die;
+
+# hash of per-sample segment counts
+my %segment_counts = ();
+
+# read in all fasta
+while (<$all_fasta_fh>) {
+   chomp;
+   if (/^>(.*)/) 
+   {
+      my $seq_id = $1;
+
+      # try to parse metadata out of sequence name
+      if (/D_(sim|mel)_(\S+)_(\d{4})_(.*)_(Galbut|Chaq)/) {
+         my $species   = $1;
+         my $location  = $2;
+         my $date      = $3;
+         my $sample_id = $4;
+
+         # now try to parse out RNA 1-3 or chaq
+         my $segment = undef;
+         if (/(Galbut|Chaq)/) {
+            if ($1 eq "Chaq") {
+               $segment = $1;
+            } 
+            elsif (/(RNA[123])/) {
+               $segment = $1;
+            }
+         }
+         if (!defined $segment)  {
+            die "ERROR: couldn't extract segment identity from sequence:\n$_\n";
+         }
+
+         # keep track of # of different segments in each sample
+         # increment sample ID segment counter
+         if (!defined $segment_counts{$sample_id}{$segment}) {
+            $segment_counts{$sample_id}{$segment} = 1;
+         } 
+         else {
+            $segment_counts{$sample_id}{$segment} += 1;
+         }
+
+      } else
+      {
+         die "ERROR: couldn't extract patterns from sequence: \n$_\n";
+      }
+   }
+}
+
+
+# for each sample ID in sample sheet
+foreach my $sample_id (keys %segment_counts) {
+
+   # output (stdout) # of segments in tidy format
+   my $sample_hashref = $segment_counts{$sample_id};
+   foreach my $segment (qw (RNA1 RNA2 RNA3 Chaq)) {
+      if (!defined $$sample_hashref{$segment}) {
+         print "$sample_id\t$segment\t0\n";
+      }
+      else {
+         print "$sample_id\t$segment\t$$sample_hashref{$segment}\n";
+      }
+   }
+
+}
+
+
+
+
+

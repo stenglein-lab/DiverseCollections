@@ -206,3 +206,182 @@ heatmap_oh <- ggplot(filter(heatmap_data, location == "Ohio",
 
 heatmap_oh
 ggsave("analyses/plots/oh_all_heatmap_virus_pres.pdf", units = "in", width = 14, height = 8)
+
+ggplot(filter(qPCR, location %in% c("Adobe", "Briarwood", "CVID", "Elm", "James",
+                                    "Linden", "Myrtle", "Wabash"))) +
+  geom_jitter(aes(x = target, y = ct, color = positive, shape = positive), 
+              alpha = 0.7, size = 3, width = 0.25) +
+  scale_colour_manual(values = c("grey50", "blueviolet")) +
+  facet_wrap(~factor(location, levels = c("Wabash", "Linden", "Elm", "CVID", 
+                                          "Adobe", "Myrtle", "James", 
+                                          "Briarwood")), nrow = 2) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
+  labs(x = "qPCR Target", y = "Ct", color = "True Positive?", shape = "True Positive?")
+ggsave("local.pdf", units = "in", width = 10, height = 8)  
+
+
+ggplot(filter(qPCR, location %in% c("Unknown", "Maine", "Pennsylvania", "Ohio"))) +
+  geom_jitter(aes(x = target, y = ct, color = positive, shape = positive), 
+              alpha = 0.7, size = 3, width = 0.25) +
+  scale_colour_manual(values = c("grey50", "blueviolet")) +
+  facet_wrap(~factor(location, levels = c("Pennsylvania", "Maine",
+                                          "Ohio", "Unknown"))) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
+  labs(x = "qPCR Target", y = "Ct", color = "True Positive?", shape = "True Positive?")
+ggsave("national.pdf", units = "in", width = 10, height = 8)  
+
+#Normalizing
+
+# Rpl for normalizing
+Rpl <- qPCR %>% 
+  filter(target == "RpL32",
+         positive == "Yes") %>% 
+  select(name, target, ct) 
+
+qPCR_new <- qPCR %>% 
+  filter(positive == "Yes",
+         target != "RpL32")
+
+qPCR_new <- left_join(qPCR_new, Rpl, by = join_by(name)) %>% 
+  mutate(delta_ct = ct.x - ct.y)
+
+local_normalized <- ggplot(filter(qPCR_new, location %in% c("Adobe", "Briarwood", 
+                                                            "CVID", "Elm", "James", 
+                                                            "Linden", "Myrtle", 
+                                                            "Wabash"))) +
+  geom_jitter(aes(x = target.x, y = delta_ct, color = target.x, shape = target.x), 
+              alpha = 0.7, size = 3, width = 0.25) +
+  scale_colour_manual(values = c("slateblue", "steelblue4")) +
+  facet_wrap(~factor(location, levels = c("Wabash", "Linden", "Elm", "CVID", 
+                                          "Adobe", "Myrtle", "James", 
+                                          "Briarwood")), nrow = 2) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
+  labs(x = "RT-qPCR Target", y = "Delta Ct (Normalized to RpL32)", 
+       color = "", shape = "")
+
+local_normalized
+ggsave("local_normalized.pdf", units = "in", width = 10, height = 8)  
+
+national_normalized <- ggplot(filter(qPCR_new, location %in% c("Unknown", "Maine", 
+                                                               "Pennsylvania", 
+                                                               "Ohio"))) +
+  geom_jitter(aes(x = target.x, y = delta_ct, color = target.x, shape = target.x), 
+              alpha = 0.7, size = 3, width = 0.25) +
+  scale_colour_manual(values = c("slateblue", "steelblue4")) +
+  facet_wrap(~factor(location, levels = c("Pennsylvania", "Maine",
+                                          "Ohio", "Unknown"))) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
+  labs(x = "RT-qPCR Target", y = "Delta Ct (Normalized to RpL32)", 
+       color = "", shape = "")
+
+national_normalized
+ggsave("national_nromalized.pdf", units = "in", width = 10, height = 8)  
+
+over_time <- ggplot(filter(qPCR_new, location %in% c("CVID", "Linden", "Wabash"))) +
+  geom_jitter(aes(x = factor(date, levels = c("July", "August", "September", 
+                                              "October")), y = delta_ct, 
+                  color = target.x, shape = target.x), 
+              alpha = 0.6, size = 2.75, width = 0.4) +
+  scale_colour_manual(values = c("darkslategrey", "tomato4")) +
+  facet_wrap(~factor(location), nrow = 3) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
+  labs(x = "Month Collected", y = "Delta Ct (Normalized to RpL32)", 
+       color = "RT-qPCR Target", shape = "RT-qPCR Target")
+
+over_time
+ggsave("over_time.pdf", units = "in", width = 10, height = 8)  
+
+over_time_ct <- ggplot(filter(qPCR_new, location %in% c("CVID", "Linden", "Wabash"))) +
+  geom_jitter(aes(x = factor(date, levels = c("July", "August", "September", 
+                                              "October")), y = ct.x, 
+                  color = target.x, shape = target.x), 
+              alpha = 0.6, size = 2.75, width = 0.4) +
+  scale_colour_manual(values = c("darkslategrey", "tomato4")) +
+  facet_wrap(~factor(location), nrow = 3) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
+  labs(x = "Month Collected", y = "Cycle Threshold", 
+       color = "RT-qPCR Target", shape = "RT-qPCR Target")
+
+over_time_ct
+ggsave("over_time_ct.pdf", units = "in", width = 10, height = 8)  
+genotype_ct <- ggplot(filter(qPCR_wide, location %in% c("Adobe", "Briarwood", 
+                                                        "", "Elm", "James", 
+                                                        "Linden", "Myrtle", 
+                                                        "Wabash"))) +
+  geom_jitter(aes(x = genotype, y = ct_use, color = genotype, shape = genotype), 
+              alpha = 0.6, size = 3, width = 0.25) +
+  scale_colour_manual(values = c("royalblue", "midnightblue")) +
+  facet_wrap(~factor(location, levels = c("Wabash", "Linden", "Elm", "CVID", 
+                                          "Adobe", "Myrtle", "James", 
+                                          "Briarwood")), nrow = 2) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
+  labs(x = "Galbut virus genotype", y = "Number of cycles to detection", 
+       color = "Galbut virus\n genotype", shape = "Galbut virus\n genotype")
+
+genotype_ct
+ggsave("local_genotype.pdf", units = "in", width = 10, height = 8)  
+
+genotype_ct_nat <- ggplot(filter(qPCR_wide, location %in% c("Unknown", "Maine", 
+                                                            "Pennsylvania", 
+                                                            "Ohio"))) +
+  geom_jitter(aes(x = genotype, y = ct_use, color = genotype, shape = genotype), 
+              alpha = 0.7, size = 3, width = 0.25) +
+  scale_colour_manual(values = c("royalblue", "midnightblue")) +
+  facet_wrap(~factor(location, levels = c("Pennsylvania", "Maine",
+                                          "Ohio", "Unknown"))) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
+  labs(x = "Galbut virus genotype", y = "Delta Ct (Normalized to RpL32)", 
+       color = "Galbut virus\n genotype", shape = "Galbut virus\n genotype")
+
+genotype_ct_nat
+ggsave("national_genotype.pdf", units = "in", width = 10)
+
+       

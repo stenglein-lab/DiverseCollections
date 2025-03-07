@@ -1,156 +1,156 @@
-﻿sample_name,location,species,present,complete,low_pos,ct_1600_1601,ct_2165_2170,genotype,ct_rpl,expected_result,chaq_present,chaq_complete,galbut_present,galbut_complete,num_seqs_submit,RNA1_submit,RNA2_submit,RNA3_submit,Chaq_submit,num_seqs_total,RNA1_total,RNA2_total,RNA3_total,Chaq_total
-1020-A7,Colorado,Drosophila melanogaster,y,y,n,12.531,12.841,A,13.836,y,y,y,y,y,5,1,1,2,1,5,1,1,2,1
-1020-A8,Colorado,Drosophila melanogaster,n,-,y,30.012,26.601,B,13.962,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-1020-A8-2,Colorado,Drosophila melanogaster,n,-,y,28.861,27.157,A,18.287,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-1020-B11,Colorado,Drosophila melanogaster,n,-,n,32.619,21.262,B,16.726,n,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-1020-B6,Colorado,Drosophila melanogaster,y,y,n,8.104,13.542,A,18.335,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-1020-C1,Colorado,Drosophila melanogaster,n,-,n,16.105,30.916,A,15.885,n,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-1020-C2,Colorado,Drosophila melanogaster,y,y,n,29.117,18.637,A,15.295,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-1020-D1,Colorado,Drosophila melanogaster,y,y,n,30.893,19.651,B,18.13,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-1020-D3,Colorado,Drosophila melanogaster,y,y,n,18.049,19.686,A,17.753,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-1020-D9,Colorado,Drosophila melanogaster,n,-,y,24.435,28.116,A,16.95,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-1020-F-0818-D11,Colorado,Drosophila melanogaster,y,y,n,0,23.515,B,18.877,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-1020-F-0818-D4,Colorado,Drosophila melanogaster,y,y,n,19.895,20.012,A,19.044,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-1020-F-0818-E4,Colorado,Drosophila melanogaster,y,n,y,29.739,30.208,A,18.922,y,n,-,y,n,0,0,0,0,0,1,0,1,0,0
-1020-F-31,Colorado,Drosophila melanogaster,y,n,n,11.919,11.71,A,17.093,n,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-1020-F-36,Colorado,Drosophila melanogaster,y,y,n,30.122,20.716,B,16.792,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-1020-F-40,Colorado,Drosophila melanogaster,y,y,y,25.07,24.75,A,15.804,y,y,y,y,y,5,1,1,2,1,5,1,1,2,1
-1020-F-44,Colorado,Drosophila melanogaster,y,y,n,30.251,19.748,B,18.801,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-1020-F1,Colorado,Drosophila melanogaster,y,y,n,29.679,19.132,A,15.713,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-1020-F3,Colorado,Drosophila melanogaster,y,n,n,26.433,23.859,A,15.81,n,n,n,y,n,0,0,0,0,0,3,0,1,1,1
-1020-F6,Colorado,Drosophila melanogaster,y,y,y,27.714,27.248,A,31.54,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-1020-F8,Colorado,Drosophila melanogaster,n,-,n,22.58,31.993,A,15.711,n,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-1020-G1,Colorado,Drosophila melanogaster,y,n,y,25.396,27.583,A,18.957,y,n,-,y,n,0,0,0,0,0,1,0,1,0,0
-1020-G3,Colorado,Drosophila melanogaster,y,y,n,29.598,17.892,A,16.225,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-1020-H7,Colorado,Drosophila melanogaster,n,-,y,25.295,28.974,A,16.127,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-1020-M-0818-A10,Colorado,Drosophila melanogaster,y,y,n,34.246,21.605,B,19.166,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-1020-M-0818-A5,Colorado,Drosophila melanogaster,y,n,n,12.741,13.503,A,18.708,n,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-1020-M-0818-A7,Colorado,Drosophila melanogaster,y,y,n,22.138,22.697,A,18.523,y,y,y,y,n,4,1,1,1,1,4,1,1,1,1
-1020-M-19,Colorado,Drosophila melanogaster,y,y,n,11.118,10.983,A,16.233,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1
-1020-M-8,Colorado,Drosophila melanogaster,y,y,n,30.455,19.901,B,16.502,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-1428-F-15,Colorado,Drosophila melanogaster,n,-,y,28.916,28.542,A,15.714,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-1428-F-8,Colorado,Drosophila melanogaster,y,y,n,13.797,13.869,A,18.179,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-1428-M-3,Colorado,Drosophila melanogaster,y,y,n,24.92,17.736,A,17.189,y,n,-,y,y,4,1,1,2,0,4,1,1,2,0
-1428-M-4,Colorado,Drosophila melanogaster,y,y,n,13.332,13.448,A,17.126,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-1428-M-6,Colorado,Drosophila melanogaster,y,y,n,22.416,21.786,A,17.989,y,n,-,y,n,1,0,0,1,0,4,1,2,1,0
-1428-F-21,Colorado,Drosophila melanogaster,y,y,n,29.387,17.949,A,17.476,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-1428-M-21,Colorado,Drosophila melanogaster,y,y,n,12.878,12.724,A,16.558,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-1428-M-36,Colorado,Drosophila melanogaster,y,n,y,26.579,25.632,A,19.559,y,n,-,y,n,0,0,0,0,0,1,0,1,0,0
-1428-M-42,Colorado,Drosophila melanogaster,y,y,n,14.617,15.964,A,18.368,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-1428-M-43,Colorado,Drosophila melanogaster,y,y,n,23.389,24.108,A,19.618,y,n,n,y,n,0,0,0,0,0,4,1,1,1,1
-500-F-11,Colorado,Drosophila melanogaster,y,y,n,12.852,13.336,A,14.453,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-500-F-12,Colorado,Drosophila melanogaster,n,-,y,26.19,26.714,A,15.123,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-500-F-21,Colorado,Drosophila melanogaster,y,y,n,33.213,18.28,B,16.67,y,n,-,y,y,4,1,2,1,0,4,1,2,1,0
-500-F-41,Colorado,Drosophila melanogaster,y,y,n,9.674,9.578,A,15.016,y,y,y,y,n,5,1,1,2,1,5,1,1,2,1
-500-F-42,Colorado,Drosophila melanogaster,y,n,y,24.751,24.558,A,15.432,y,n,-,y,n,0,0,0,0,0,2,1,1,0,0
-500-F-67,Colorado,Drosophila melanogaster,y,y,n,12.921,13.581,A,16.399,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-500-M-100,Colorado,Drosophila melanogaster,y,n,y,25.16,25.715,A,17.4,y,n,-,y,n,0,0,0,0,0,2,0,1,1,0
-500-M-16,Colorado,Drosophila melanogaster,y,y,n,30.318,17.667,B,14.143,y,n,-,y,y,3,1,1,1,0,4,1,2,1,0
-500-M-17,Colorado,Drosophila melanogaster,y,y,n,13.245,12.303,A,14.375,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-500-M-40,Colorado,Drosophila melanogaster,n,-,n,32.762,17.025,B,16.928,n,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-500-M-54,Colorado,Drosophila melanogaster,y,y,n,12.428,13.361,A,17.777,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-500-M-55,Colorado,Drosophila melanogaster,y,n,y,25.585,26.235,A,17.72,y,y,-,n,-,0,0,0,0,0,2,0,0,1,1
-500-M-57,Colorado,Drosophila melanogaster,y,y,n,12.817,13.658,A,17.629,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-500-M-6,Colorado,Drosophila melanogaster,n,-,y,28.472,27.033,A,16.777,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-500-M-60,Colorado,Drosophila melanogaster,y,y,n,28.703,18.942,A,18.534,y,n,-,y,y,4,1,1,2,0,4,1,1,2,0
-500-M-61,Colorado,Drosophila melanogaster,y,y,n,12.13,13.473,A,17.912,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-500-M-61-2,Colorado,Drosophila melanogaster,y,y,n,12.473,13.631,A,17.138,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1
-500-M-65,Colorado,Drosophila melanogaster,y,y,n,13.027,13.998,A,18.17,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-500-M-65-2,Colorado,Drosophila melanogaster,y,y,n,8.872,9.765,A,16.776,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-500-M-71,Colorado,Drosophila melanogaster,y,n,y,23.979,24.348,A,18.469,y,n,-,y,n,0,0,0,0,0,3,1,1,1,0
-500-M-71-2,Colorado,Drosophila melanogaster,y,n,n,12.256,13.371,A,16.536,n,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-500-M-83,Colorado,Drosophila melanogaster,y,y,n,12.236,12.865,A,17.165,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-500-M-84,Colorado,Drosophila melanogaster,y,n,n,10.593,11.621,A,19.205,n,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-500-M-F10,Colorado,Drosophila melanogaster,y,y,n,15.147,15.46,A,19.731,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-500-M-F11,Colorado,Drosophila melanogaster,y,y,n,0,21.373,B,21.832,y,n,-,y,n,3,1,1,1,0,4,1,1,2,0
-500-M-F9,Colorado,Drosophila melanogaster,y,n,y,27.537,27.62,A,22.253,y,y,n,y,n,0,0,0,0,0,3,1,1,0,1
-500-M-G2,Colorado,Drosophila melanogaster,y,y,n,0,22.419,B,20.99,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-Adobe-B4,Colorado,Drosophila melanogaster,y,y,n,0,18.794,B,18.663,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-Adobe-B6,Colorado,Drosophila melanogaster,y,y,n,27.179,20.699,A,22.713,y,n,-,y,y,3,1,1,1,0,7,2,2,2,1
-Adobe-B8,Colorado,Drosophila melanogaster,y,y,n,8.872,11.839,A,18.521,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-Adobe-C1,Colorado,Drosophila melanogaster,n,-,y,24.899,28.515,A,18.835,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-Adobe-C2,Colorado,Drosophila melanogaster,y,y,n,31.122,17.371,B,20.049,y,n,-,y,y,3,1,1,1,0,4,1,2,1,0
-Briarwood-D10,Colorado,Drosophila melanogaster,n,-,y,27.958,28.925,A,18.331,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-Briarwood-D9,Colorado,Drosophila melanogaster,y,y,n,11.832,13.402,A,16.591,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-CVID-0825-B1,Colorado,Drosophila melanogaster,y,y,n,29.473,17.6,A,16.357,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-CVID-0825-C10,Colorado,Drosophila melanogaster,y,y,n,11.55,12.808,A,17.253,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-CVID-0911-E3,Colorado,Drosophila melanogaster,n,-,y,28.86,27.784,A,16.271,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-CVID-0911-F3,Colorado,Drosophila melanogaster,n,-,y,28.997,27.843,A,18.961,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-CVID-0911-F4,Colorado,Drosophila melanogaster,y,y,n,10.386,11.828,A,19.24,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1
-CVID-1006-G6,Colorado,Drosophila melanogaster,y,y,n,10.855,11.402,A,17.963,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-CVID-1006-G7,Colorado,Drosophila melanogaster,y,y,n,10.584,12.316,A,17.22,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-CVID-1006-H2,Colorado,Drosophila melanogaster,y,y,n,10.63,12.335,A,17.655,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1
-CVID-1006-H3,Colorado,Drosophila melanogaster,y,y,n,11.686,11.748,A,18.373,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-CVID-1006-H4,Colorado,Drosophila melanogaster,y,n,y,27.736,27.484,A,18.487,y,n,-,y,n,0,0,0,0,0,1,0,0,1,0
-hydei-20-TD-1,Colorado,Drosophila affinis,n,-,y,30.59,30.504,A,27.817,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-James-A4,Colorado,Drosophila melanogaster,y,y,n,0,19.216,B,18.339,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-James-A5,Colorado,Drosophila melanogaster,y,y,n,22.906,21.187,A,18.001,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1
-ME-F-1,Maine,Drosophila melanogaster,y,y,n,28.641,19.55,A,20.116,y,y,y,y,n,5,1,1,1,2,8,1,2,3,2
-ME-F-2,Maine,Drosophila melanogaster,y,y,y,26.593,24.304,A,24.216,y,y,y,y,n,3,0,1,1,1,5,1,1,2,1
-ME-F-3,Maine,Drosophila melanogaster,y,y,n,19.114,17.561,A,24.726,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-ME-F-9,Maine,Drosophila melanogaster,y,y,y,0,28.894,B,20.005,y,n,n,y,n,2,0,1,1,0,5,1,1,2,1
-ME-M-1,Maine,Drosophila melanogaster,y,y,n,15.431,13.648,A,21.71,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1
-ME-M-10,Maine,Drosophila melanogaster,y,y,n,30.822,19.703,B,20.923,y,n,-,y,n,3,1,1,1,0,3,1,1,1,0
-ME-M-11,Maine,Drosophila melanogaster,y,y,n,15.81,15.928,A,22.256,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-ME-M-13,Maine,Drosophila melanogaster,y,y,y,27.78,27.111,A,19.45,y,n,n,y,n,0,0,0,0,0,4,1,1,1,1
-ME-M-14,Maine,Drosophila melanogaster,y,y,n,27.568,19.066,A,18.498,y,n,-,y,y,3,1,1,1,0,4,1,2,1,0
-ME-M-17,Maine,Drosophila melanogaster,y,y,n,29.613,19.868,A,22.791,y,n,n,y,y,3,1,1,1,0,5,1,1,2,1
-ME-M-18,Maine,Drosophila melanogaster,y,y,n,27.079,23.091,A,21.53,y,n,-,y,y,3,1,1,1,0,4,1,2,1,0
-ME-M-19,Maine,Drosophila melanogaster,y,y,n,30.286,20.411,B,18.891,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-ME-M-2,Maine,Drosophila melanogaster,y,y,n,19.275,16.395,A,22.25,y,y,y,y,y,5,1,1,1,2,6,1,1,2,2
-ME-M-20,Maine,Drosophila melanogaster,y,y,n,29.278,19.814,A,19.487,y,n,n,y,y,3,1,1,1,0,4,1,1,1,1
-ME-M-3,Maine,Drosophila simulans,y,y,n,26.391,22.326,A,21.338,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1
-ME-M-4,Maine,Drosophila melanogaster,y,y,n,30.285,20.612,B,19.83,y,n,-,y,y,3,1,1,1,0,4,1,2,1,0
-ME-M-6,Maine,Drosophila melanogaster,y,y,n,24.69,17.871,A,23.451,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-ME-M-7,Maine,Drosophila melanogaster,y,y,n,26.762,19.456,A,19.128,y,y,y,y,y,7,2,2,2,1,7,2,2,2,1
-ME-M-8,Maine,Drosophila melanogaster,y,y,n,24.59,22.794,A,19.594,y,y,y,y,n,5,1,1,2,1,5,1,1,1,2
-ME-M-9,Maine,Drosophila melanogaster,y,n,y,33.385,27.359,B,20.836,y,n,-,y,n,0,0,0,0,0,1,0,0,0,1
-mel-20-AG-4,Colorado,Drosophila melanogaster,n,-,y,27.587,26.572,A,15.87,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-mel-20-AG-5,Colorado,Drosophila melanogaster,n,-,y,29.92,28.269,A,16.415,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-mel-20-TD-3,Colorado,Drosophila melanogaster,y,y,n,31.985,18.465,B,14.882,y,n,-,y,y,4,1,1,2,0,4,1,1,2,0
-mel-21-LK-5,Colorado,Drosophila melanogaster,y,n,y,27.683,25.599,A,15.719,y,n,-,y,n,0,0,0,0,0,2,0,1,1,0
-mel-21-MDS-9,Colorado,Drosophila melanogaster,y,y,n,0,15.34,B,19.621,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-Myrtle-E10,Colorado,Drosophila melanogaster,y,n,n,22.067,22.863,A,17.287,n,y,n,y,n,0,0,0,0,0,3,0,1,1,1
-Myrtle-E9,Colorado,Drosophila melanogaster,y,y,n,9.941,14.844,A,18.285,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-Myrtle-D1,Colorado,Drosophila melanogaster,n,-,y,26.318,32.262,A,17.619,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-Myrtle-D11,Colorado,Drosophila melanogaster,y,y,n,30.208,20.009,B,18.955,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-Myrtle-D5,Colorado,Drosophila melanogaster,y,y,n,31.941,22.721,B,17.034,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-Myrtle-D8,Colorado,Drosophila melanogaster,y,n,y,24.368,27.884,A,17.517,y,n,-,y,n,0,0,0,0,0,2,0,1,1,0
-Myrtle-E4,Colorado,Drosophila melanogaster,n,-,y,22.339,31.795,A,18.039,n,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-OH-M-3,Ohio,undetermined,n,-,y,25.406,26.806,A,30.482,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-OH-M-4,Ohio,undetermined,n,-,y,32.058,22.16,B,32.056,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-OH-M-5,Ohio,Drosophila melanogaster,y,y,n,18.458,16.7,A,20.018,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-OH-M-6,Ohio,undetermined,n,-,y,0,31.743,B,0,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-OH-M-7,Ohio,Drosophila melanogaster,n,-,y,31.57,23.953,B,22.38,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-OH-F-1,Ohio,undetermined,n,-,y,27.275,27.722,A,28.995,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-OH-F-2,Ohio,undetermined,n,-,y,30.798,22.156,B,29.54,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-OH-F-3,Ohio,undetermined,n,-,y,27.416,25.47,A,30.495,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-Peach-1-B2,Unknown,Drosophila melanogaster,y,n,y,0,25.905,B,16.992,y,n,-,y,n,0,0,0,0,0,1,0,1,0,0
-Peach-10-F10,Unknown,Drosophila melanogaster,y,y,n,13.981,13.24,A,16.74,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-Peach-11-F11,Unknown,Drosophila melanogaster,n,-,y,28.904,28.93,A,16.917,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-Peach-12-H1,Unknown,Drosophila melanogaster,n,-,y,24.539,0,A,17.458,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-Peach-13-H7,Unknown,Drosophila melanogaster,y,y,n,29.669,28.319,A,20.98,y,y,y,y,y,5,1,1,2,1,5,1,1,2,1
-Peach-2-B4,Unknown,Drosophila melanogaster,y,n,n,24.667,19.981,A,16.173,n,y,n,y,n,0,0,0,0,0,4,1,1,1,1
-Peach-3-B5,Unknown,Drosophila melanogaster,y,n,n,22.528,22.01,A,15.876,n,n,-,y,n,0,0,0,0,0,3,1,1,1,0
-Peach-4-B7,Unknown,Drosophila melanogaster,y,n,n,23.697,23.02,A,16.488,n,n,-,y,n,0,0,0,0,0,3,1,1,1,0
-Peach-5-B9,Unknown,Drosophila melanogaster,y,n,n,23.957,23.699,A,15.787,n,y,n,y,n,0,0,0,0,0,4,1,1,1,1
-Peach-6-E5,Unknown,Drosophila melanogaster,n,-,y,31.005,28.9,B,19.454,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-Peach-7-F6,Unknown,Drosophila melanogaster,n,-,y,27.907,27.463,A,16.875,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
-Peach-8-F7,Unknown,Drosophila melanogaster,y,y,n,13.31,12.915,A,17.122,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0
-Peach-9-F8,Unknown,Drosophila melanogaster,y,y,n,13.842,13.133,A,16.921,y,n,n,y,y,3,1,1,1,0,4,1,1,1,1
-Penn-F-1,Pennsylvania,Drosophila melanogaster,y,n,n,23.446,25.828,A,25.562,n,y,y,y,n,3,0,1,1,1,4,1,1,1,1
-Penn-F-12,Pennsylvania,Drosophila melanogaster,y,y,n,20.238,18.505,A,20.31,y,y,y,y,y,4,1,1,1,1,5,1,1,1,2
-Penn-F-2,Pennsylvania,Drosophila melanogaster,y,n,n,11.108,11.347,A,22.654,n,y,y,y,y,5,1,1,1,2,5,1,1,1,2
-Penn-F-3,Pennsylvania,Drosophila melanogaster,y,y,n,15.761,14.769,A,19.096,y,y,y,y,y,4,1,1,1,1,6,1,2,1,2
-Penn-F-4,Pennsylvania,Drosophila melanogaster,y,y,n,22.435,18.712,A,20.67,y,y,y,y,y,7,2,2,2,1,7,2,2,2,1
-Penn-F-6,Pennsylvania,Drosophila melanogaster,y,y,n,28.293,21.602,A,26.92,y,y,y,y,n,3,0,2,0,1,5,1,2,1,1
-Penn-F-9,Pennsylvania,Drosophila melanogaster,y,y,n,13.166,11.794,A,23.146,y,y,y,y,n,4,1,1,1,1,7,1,2,2,2
-Penn-M-10,Pennsylvania,Drosophila melanogaster,y,y,n,12.406,10.235,A,20.795,y,y,y,y,y,4,1,1,1,1,6,1,1,2,2
-Penn-M-11,Pennsylvania,Drosophila melanogaster,y,y,n,26.698,23.465,A,24.774,y,y,y,y,n,3,0,1,1,1,6,1,1,2,2
-Penn-M-14,Pennsylvania,Drosophila melanogaster,y,y,n,21.869,20.345,A,22.558,y,y,y,y,n,4,1,1,1,1,4,1,1,1,1
-Penn-M-15,Pennsylvania,Drosophila melanogaster,y,n,n,13.57,12.292,A,22.887,n,y,n,y,y,3,1,1,1,0,5,1,1,1,2
-Penn-M-2,Pennsylvania,Drosophila melanogaster,y,y,n,21.769,20.377,A,24.188,y,y,y,y,y,6,1,1,2,2,6,1,1,2,2
-Penn-M-8,Pennsylvania,Drosophila melanogaster,y,y,n,23.279,24.297,A,24.87,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1
-sim-20-AG-3,Colorado,Drosophila melanogaster,y,n,y,27.726,27.296,A,15.388,y,y,n,y,n,0,0,0,0,0,2,0,0,1,1
-sim-20-TD-4,Colorado,Drosophila melanogaster,y,y,n,33.531,17.98,B,14.877,y,n,-,y,y,4,1,1,2,0,4,1,1,2,0
-sim-20-TD-5,Colorado,Drosophila melanogaster,n,-,y,28.556,27.198,A,12.559,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0
+﻿sample_name,location,species,present,complete,low_pos,ct_1600_1601,ct_2165_2170,genotype,ct_rpl,expected_result,chaq_present,chaq_complete,galbut_present,galbut_complete,num_seqs_submit,RNA1_submit,RNA2_submit,RNA3_submit,Chaq_submit,num_seqs_total,RNA1_total,RNA2_total,RNA3_total,Chaq_total,infection_status,clade,accession
+1020_A7,Colorado,Drosophila melanogaster,y,y,n,12.531,12.841,A,13.836,y,y,y,y,y,5,1,1,2,1,5,1,1,2,1,co,A,"PQ625166, PQ625079, PQ624976, PQ624867, PQ624868"
+1020_A8,Colorado,Drosophila melanogaster,n,-,y,30.012,26.601,B,13.962,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+1020_A8_2,Colorado,Drosophila melanogaster,n,-,y,28.861,27.157,A,18.287,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+1020_B11,Colorado,Drosophila melanogaster,n,-,n,32.619,21.262,B,16.726,n,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+1020_B6,Colorado,Drosophila melanogaster,y,y,n,8.104,13.542,A,18.335,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625167, PQ625080, PQ624977, PQ624869"
+1020_C1,Colorado,Drosophila melanogaster,n,-,n,16.105,30.916,A,15.885,n,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+1020_C2,Colorado,Drosophila melanogaster,y,y,n,29.117,18.637,A,15.295,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625081, PQ624978, PQ624870"
+1020_D1,Colorado,Drosophila melanogaster,y,y,n,30.893,19.651,B,18.130,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625082, PQ624979, PQ624871"
+1020_D3,Colorado,Drosophila melanogaster,y,y,n,18.049,19.686,A,17.753,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625168, PQ625083, PQ624980, PQ624872"
+1020_D9,Colorado,Drosophila melanogaster,n,-,y,24.435,28.116,A,16.950,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+1020_F_0818_D11,Colorado,Drosophila melanogaster,y,y,n,0,23.515,B,18.877,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625091, PQ624988, PQ624881"
+1020_F_0818_D4,Colorado,Drosophila melanogaster,y,y,n,19.895,20.012,A,19.044,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625172, PQ625090, PQ624987, PQ624880"
+1020_F_0818_E4,Colorado,Drosophila melanogaster,y,n,y,29.739,30.208,A,18.922,y,n,-,y,n,0,0,0,0,0,1,0,1,0,0,sin,-,
+1020_F_31,Colorado,Drosophila melanogaster,y,n,n,11.919,11.710,A,17.093,n,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625170, PQ625086, PQ624983, PQ624875"
+1020_F_36,Colorado,Drosophila melanogaster,y,y,n,30.122,20.716,B,16.792,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625087, PQ624984, PQ624876"
+1020_F_40,Colorado,Drosophila melanogaster,y,y,y,25.070,24.750,A,15.804,y,y,y,y,y,5,1,1,2,1,5,1,1,2,1,co,A,"PQ625171, PQ625088, PQ624985, PQ624877, PQ624878"
+1020_F_44,Colorado,Drosophila melanogaster,y,y,n,30.251,19.748,B,18.801,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625089, PQ624986, PQ624879"
+1020_F1,Colorado,Drosophila melanogaster,y,y,n,29.679,19.132,A,15.713,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625084, PQ624981, PQ624873"
+1020_F3,Colorado,Drosophila melanogaster,y,n,n,26.433,23.859,A,15.810,n,n,n,y,n,0,0,0,0,0,3,0,1,1,1,sin,-,
+1020_F6,Colorado,Drosophila melanogaster,y,y,y,27.714,27.248,A,31.540,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625169, PQ625085, PQ624982, PQ624874"
+1020_F8,Colorado,Drosophila melanogaster,n,-,n,22.580,31.993,A,15.711,n,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+1020_G1,Colorado,Drosophila melanogaster,y,n,y,25.396,27.583,A,18.957,y,n,-,y,n,0,0,0,0,0,1,0,1,0,0,sin,-,
+1020_G3,Colorado,Drosophila melanogaster,y,y,n,29.598,17.892,A,16.225,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625092, PQ624989, PQ624882"
+1020_H7,Colorado,Drosophila melanogaster,n,-,y,25.295,28.974,A,16.127,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+1020_M_0818_A10,Colorado,Drosophila melanogaster,y,y,n,34.246,21.605,B,19.166,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625097, PQ624994, PQ624887"
+1020_M_0818_A5,Colorado,Drosophila melanogaster,y,n,n,12.741,13.503,A,18.708,n,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625174, PQ625095, PQ624992, PQ624885"
+1020_M_0818_A7,Colorado,Drosophila melanogaster,y,y,n,22.138,22.697,A,18.523,y,y,y,y,n,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625175, PQ625096, PQ624993, PQ624886"
+1020_M_19,Colorado,Drosophila melanogaster,y,y,n,11.118,10.983,A,16.233,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1,co,A,"PQ625173, PQ625094, PQ624991, PQ624884"
+1020_M_8,Colorado,Drosophila melanogaster,y,y,n,30.455,19.901,B,16.502,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625093, PQ624990, PQ624883"
+1428_F_15,Colorado,Drosophila melanogaster,n,-,y,28.916,28.542,A,15.714,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+1428_F_8,Colorado,Drosophila melanogaster,y,y,n,13.797,13.869,A,18.179,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625176, PQ625098, PQ624995, PQ624888"
+1428_M_3,Colorado,Drosophila melanogaster,y,y,n,24.920,17.736,A,17.189,y,n,-,y,y,4,1,1,2,0,4,1,1,2,0,co,B,"PQ625100, PQ624997, PQ624890, PQ624891"
+1428_M_4,Colorado,Drosophila melanogaster,y,y,n,13.332,13.448,A,17.126,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625177, PQ625101, PQ624998, PQ624892"
+1428_M_6,Colorado,Drosophila melanogaster,y,y,n,22.416,21.786,A,17.989,y,n,-,y,n,1,0,0,1,0,4,1,2,1,0,co,B,PQ624893
+1428-F-21,Colorado,Drosophila melanogaster,y,y,n,29.387,17.949,A,17.476,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625099, PQ624996, PQ624889"
+1428-M-21,Colorado,Drosophila melanogaster,y,y,n,12.878,12.724,A,16.558,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,A,"PQ625102, PQ624999, PQ624894"
+1428-M-36,Colorado,Drosophila melanogaster,y,n,y,26.579,25.632,A,19.559,y,n,-,y,n,0,0,0,0,0,1,0,1,0,0,sin,-,
+1428-M-42,Colorado,Drosophila melanogaster,y,y,n,14.617,15.964,A,18.368,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625178, PQ625103, PQ625000, PQ624895"
+1428-M-43,Colorado,Drosophila melanogaster,y,y,n,23.389,24.108,A,19.618,y,n,n,y,n,0,0,0,0,0,4,1,1,1,1,sin,-,
+500_F_11,Colorado,Drosophila melanogaster,y,y,n,12.852,13.336,A,14.453,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625155, PQ625060, PQ624956, PQ624846"
+500_F_12,Colorado,Drosophila melanogaster,n,-,y,26.190,26.714,A,15.123,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+500_F_21,Colorado,Drosophila melanogaster,y,y,n,33.213,18.280,B,16.670,y,n,-,y,y,4,1,2,1,0,4,1,2,1,0,co,B,"PQ625061, PQ624957, PQ624958, PQ624847"
+500_F_41,Colorado,Drosophila melanogaster,y,y,n,9.674,9.578,A,15.016,y,y,y,y,n,5,1,1,2,1,5,1,1,2,1,co,A,"PQ625156, PQ625062, PQ624959, PQ624848, PQ624849"
+500_F_42,Colorado,Drosophila melanogaster,y,n,y,24.751,24.558,A,15.432,y,n,-,y,n,0,0,0,0,0,2,1,1,0,0,sin,-,
+500_F_67,Colorado,Drosophila melanogaster,y,y,n,12.921,13.581,A,16.399,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,A,"PQ625063, PQ624960, PQ624850"
+500_M_100,Colorado,Drosophila melanogaster,y,n,y,25.160,25.715,A,17.400,y,n,-,y,n,0,0,0,0,0,2,0,1,1,0,sin,-,
+500_M_16,Colorado,Drosophila melanogaster,y,y,n,30.318,17.667,B,14.143,y,n,-,y,y,3,1,1,1,0,4,1,2,1,0,co,B,"PQ625064, PQ624961, PQ624851"
+500_M_17,Colorado,Drosophila melanogaster,y,y,n,13.245,12.303,A,14.375,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625157, PQ625065, PQ624962, PQ624852"
+500_M_40,Colorado,Drosophila melanogaster,n,-,n,32.762,17.025,B,16.928,n,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+500_M_54,Colorado,Drosophila melanogaster,y,y,n,12.428,13.361,A,17.777,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,A,"PQ625066, PQ624963, PQ624853"
+500_M_55,Colorado,Drosophila melanogaster,y,n,y,25.585,26.235,A,17.720,y,y,-,n,-,0,0,0,0,0,2,0,0,1,1,sin,-,
+500_M_57,Colorado,Drosophila melanogaster,y,y,n,12.817,13.658,A,17.629,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625158, PQ625067, PQ624964, PQ624854"
+500_M_6,Colorado,Drosophila melanogaster,n,-,y,28.472,27.033,A,16.777,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+500_M_60,Colorado,Drosophila melanogaster,y,y,n,28.703,18.942,A,18.534,y,n,-,y,y,4,1,1,2,0,4,1,1,2,0,co,A_B,"PQ625068, PQ624965, PQ624855, PQ624856"
+500_M_61,Colorado,Drosophila melanogaster,y,y,n,12.130,13.473,A,17.912,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625160, PQ625070, PQ624967, PQ624858"
+500_M_61_2,Colorado,Drosophila melanogaster,y,y,n,12.473,13.631,A,17.138,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1,co,A,"PQ625159, PQ625069, PQ624966, PQ624857"
+500_M_65,Colorado,Drosophila melanogaster,y,y,n,13.027,13.998,A,18.170,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625162, PQ625072, PQ624969, PQ624860"
+500_M_65_2,Colorado,Drosophila melanogaster,y,y,n,8.872,9.765,A,16.776,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625161, PQ625071, PQ624968, PQ624859"
+500_M_71,Colorado,Drosophila melanogaster,y,n,y,23.979,24.348,A,18.469,y,n,-,y,n,0,0,0,0,0,3,1,1,1,0,sin,-,
+500_M_71_2,Colorado,Drosophila melanogaster,y,n,n,12.256,13.371,A,16.536,n,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625163, PQ625073, PQ624970, PQ624861"
+500_M_83,Colorado,Drosophila melanogaster,y,y,n,12.236,12.865,A,17.165,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,A,"PQ625074, PQ624971, PQ624862"
+500_M_84,Colorado,Drosophila melanogaster,y,n,n,10.593,11.621,A,19.205,n,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625164, PQ625075, PQ624972, PQ624863"
+500_M_F10,Colorado,Drosophila melanogaster,y,y,n,15.147,15.460,A,19.731,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625165, PQ625076, PQ624973, PQ624864"
+500_M_F11,Colorado,Drosophila melanogaster,y,y,n,0,21.373,B,21.832,y,n,-,y,n,3,1,1,1,0,4,1,1,2,0,co,B,"PQ625077, PQ624974, PQ624865"
+500_M_F9,Colorado,Drosophila melanogaster,y,n,y,27.537,27.620,A,22.253,y,y,n,y,n,0,0,0,0,0,3,1,1,0,1,sin,-,
+500_M_G2,Colorado,Drosophila melanogaster,y,y,n,0,22.419,B,20.990,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625078, PQ624975, PQ624866"
+Adobe-B4,Colorado,Drosophila melanogaster,y,y,n,0,18.794,B,18.663,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625104, PQ625001, PQ624896"
+Adobe-B6,Colorado,Drosophila melanogaster,y,y,n,27.179,20.699,A,22.713,y,n,-,y,y,3,1,1,1,0,7,2,2,2,1,co,B,"PQ625105, PQ625002, PQ624897"
+Adobe-B8,Colorado,Drosophila melanogaster,y,y,n,8.872,11.839,A,18.521,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625179, PQ625106, PQ625003, PQ624898"
+Adobe-C1,Colorado,Drosophila melanogaster,n,-,y,24.899,28.515,A,18.835,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+Adobe-C2,Colorado,Drosophila melanogaster,y,y,n,31.122,17.371,B,20.049,y,n,-,y,y,3,1,1,1,0,4,1,2,1,0,co,B,"PQ625107, PQ625004, PQ624899"
+Briarwood_D10,Colorado,Drosophila melanogaster,n,-,y,27.958,28.925,A,18.331,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+Briarwood_D9,Colorado,Drosophila melanogaster,y,y,n,11.832,13.402,A,16.591,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625180, PQ625108, PQ625005, PQ624900"
+CVID_0825_B1,Colorado,Drosophila melanogaster,y,y,n,29.473,17.600,A,16.357,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625109, PQ625006, PQ624901"
+CVID_0825_C10,Colorado,Drosophila melanogaster,y,y,n,11.550,12.808,A,17.253,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,A,"PQ625110, PQ625007, PQ624902"
+CVID_0911_E3,Colorado,Drosophila melanogaster,n,-,y,28.860,27.784,A,16.271,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+CVID_0911_F3,Colorado,Drosophila melanogaster,n,-,y,28.997,27.843,A,18.961,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+CVID_0911_F4,Colorado,Drosophila melanogaster,y,y,n,10.386,11.828,A,19.240,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1,co,A,"PQ625181, PQ625111, PQ625008, PQ624903"
+CVID_1006_G6,Colorado,Drosophila melanogaster,y,y,n,10.855,11.402,A,17.963,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625182, PQ625112, PQ625009, PQ624904"
+CVID_1006_G7,Colorado,Drosophila melanogaster,y,y,n,10.584,12.316,A,17.220,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625183, PQ625113, PQ625010, PQ624905"
+CVID_1006_H2,Colorado,Drosophila melanogaster,y,y,n,10.630,12.335,A,17.655,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1,co,A,"PQ625184, PQ625114, PQ625011, PQ624906"
+CVID_1006_H3,Colorado,Drosophila melanogaster,y,y,n,11.686,11.748,A,18.373,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625185, PQ625115, PQ625012, PQ624907"
+CVID_1006_H4,Colorado,Drosophila melanogaster,y,n,y,27.736,27.484,A,18.487,y,n,-,y,n,0,0,0,0,0,1,0,0,1,0,sin,-,
+hydei-20-TD-1,Colorado,Drosophila affinis,n,-,y,30.590,30.504,A,27.817,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+James-A4,Colorado,Drosophila melanogaster,y,y,n,0,19.216,B,18.339,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625116, PQ625013, PQ624908"
+James-A5,Colorado,Drosophila melanogaster,y,y,n,22.906,21.187,A,18.001,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1,co,A,"PQ625186, PQ625117, PQ625014, PQ624909"
+ME-F-1,Maine,Drosophila melanogaster,y,y,n,28.641,19.550,A,20.116,y,y,y,y,n,5,1,1,1,2,8,1,2,3,2,co,A_B,"PQ625187, PQ625188, PQ625118, PQ625015, PQ624910"
+ME-F-2,Maine,Drosophila melanogaster,y,y,y,26.593,24.304,A,24.216,y,y,y,y,n,3,0,1,1,1,5,1,1,2,1,co,A,"PQ625189, PQ625016, PQ624911"
+ME-F-3,Maine,Drosophila melanogaster,y,y,n,19.114,17.561,A,24.726,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625190, PQ625119, PQ625017, PQ624912"
+ME-F-9,Maine,Drosophila melanogaster,y,y,y,0,28.894,B,20.005,y,n,n,y,n,2,0,1,1,0,5,1,1,2,1,co,B,"PQ625018, PQ624913"
+ME-M-1,Maine,Drosophila melanogaster,y,y,n,15.431,13.648,A,21.710,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1,co,A,"PQ625191, PQ625120, PQ625019, PQ624914"
+ME-M-10,Maine,Drosophila melanogaster,y,y,n,30.822,19.703,B,20.923,y,n,-,y,n,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625127, PQ625026, PQ624922"
+ME-M-11,Maine,Drosophila melanogaster,y,y,n,15.810,15.928,A,22.256,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625196, PQ625128, PQ625027, PQ624923"
+ME-M-13,Maine,Drosophila melanogaster,y,y,y,27.780,27.111,A,19.450,y,n,n,y,n,0,0,0,0,0,4,1,1,1,1,sin,-,
+ME-M-14,Maine,Drosophila melanogaster,y,y,n,27.568,19.066,A,18.498,y,n,-,y,y,3,1,1,1,0,4,1,2,1,0,co,B,"PQ625129, PQ625028, PQ624924"
+ME-M-17,Maine,Drosophila melanogaster,y,y,n,29.613,19.868,A,22.791,y,n,n,y,y,3,1,1,1,0,5,1,1,2,1,co,B,"PQ625130, PQ625029, PQ624925"
+ME-M-18,Maine,Drosophila melanogaster,y,y,n,27.079,23.091,A,21.530,y,n,-,y,y,3,1,1,1,0,4,1,2,1,0,co,B,"PQ625131, PQ625030, PQ624926"
+ME-M-19,Maine,Drosophila melanogaster,y,y,n,30.286,20.411,B,18.891,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625132, PQ625031, PQ624927"
+ME-M-2,Maine,Drosophila melanogaster,y,y,n,19.275,16.395,A,22.250,y,y,y,y,y,5,1,1,1,2,6,1,1,2,2,co,A,"PQ625192, PQ625193, PQ625121, PQ625020, PQ624915"
+ME-M-20,Maine,Drosophila melanogaster,y,y,n,29.278,19.814,A,19.487,y,n,n,y,y,3,1,1,1,0,4,1,1,1,1,sin,B,"PQ625133, PQ625032, PQ624928"
+ME-M-3,Maine,undetermined,y,y,n,26.391,22.326,A,21.338,y,y,y,y,y,4,1,1,1,1,5,1,1,2,1,co,A,"PQ625214, PQ625153, PQ625056, PQ624952"
+ME-M-4,Maine,Drosophila melanogaster,y,y,n,30.285,20.612,B,19.830,y,n,-,y,y,3,1,1,1,0,4,1,2,1,0,co,B,"PQ625122, PQ625021, PQ624916"
+ME-M-6,Maine,Drosophila melanogaster,y,y,n,24.690,17.871,A,23.451,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625123, PQ625022, PQ624917"
+ME-M-7,Maine,Drosophila melanogaster,y,y,n,26.762,19.456,A,19.128,y,y,y,y,y,7,2,2,2,1,7,2,2,2,1,co,A_B,"PQ625194, PQ625124, PQ625125, PQ625023, PQ625024, PQ624918, PQ624919"
+ME-M-8,Maine,Drosophila melanogaster,y,y,n,24.590,22.794,A,19.594,y,y,y,y,n,5,1,1,2,1,6,1,1,2,2,co,A,"PQ625195, PQ625126, PQ625025, PQ624920, PQ624921"
+ME-M-9,Maine,Drosophila melanogaster,y,n,y,33.385,27.359,B,20.836,y,n,-,y,n,0,0,0,0,0,1,0,0,0,1,sin,-,
+mel-20-AG-4,Colorado,Drosophila melanogaster,n,-,y,27.587,26.572,A,15.870,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+mel-20-AG-5,Colorado,Drosophila melanogaster,n,-,y,29.920,28.269,A,16.415,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+mel-20-TD-3,Colorado,Drosophila melanogaster,y,y,n,31.985,18.465,B,14.882,y,n,-,y,y,4,1,1,2,0,4,1,1,2,0,co,B,"PQ625057, PQ624953, PQ624841, PQ624842"
+mel-21-LK-5,Colorado,Drosophila melanogaster,y,n,y,27.683,25.599,A,15.719,y,n,-,y,n,0,0,0,0,0,2,0,1,1,0,sin,-,
+mel-21-MDS-9,Colorado,Drosophila melanogaster,y,y,n,0,15.340,B,19.621,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625154, PQ625059, PQ624955, PQ624845"
+Myrtle_E10,Colorado,Drosophila melanogaster,y,n,n,22.067,22.863,A,17.287,n,y,n,y,n,0,0,0,0,0,3,0,1,1,1,sin,-,
+Myrtle_E9,Colorado,Drosophila melanogaster,y,y,n,9.941,14.844,A,18.285,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625197, PQ625136, PQ625035, PQ624931"
+Myrtle-D1,Colorado,Drosophila melanogaster,n,-,y,26.318,32.262,A,17.619,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+Myrtle-D11,Colorado,Drosophila melanogaster,y,y,n,30.208,20.009,B,18.955,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625135, PQ625034, PQ624930"
+Myrtle-D5,Colorado,Drosophila melanogaster,y,y,n,31.941,22.721,B,17.034,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,B,"PQ625134, PQ625033, PQ624929"
+Myrtle-D8,Colorado,Drosophila melanogaster,y,n,y,24.368,27.884,A,17.517,y,n,-,y,n,0,0,0,0,0,2,0,1,1,0,sin,-,
+Myrtle-E4,Colorado,Drosophila melanogaster,n,-,y,22.339,31.795,A,18.039,n,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+OH_M_3,Ohio,undetermined,n,-,y,25.406,26.806,A,30.482,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+OH_M_4,Ohio,undetermined,n,-,y,32.058,22.160,B,32.056,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+OH_M_5,Ohio,Drosophila melanogaster,y,y,n,18.458,16.700,A,20.018,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625198, PQ625137, PQ625036, PQ624932"
+OH_M_6,Ohio,undetermined,n,-,y,0,31.743,B,0,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+OH_M_7,Ohio,Drosophila melanogaster,n,-,y,31.570,23.953,B,22.380,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+OH-F-1,Ohio,undetermined,n,-,y,27.275,27.722,A,28.995,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+OH-F-2,Ohio,undetermined,n,-,y,30.798,22.156,B,29.540,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+OH-F-3,Ohio,undetermined,n,-,y,27.416,25.470,A,30.495,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+Peach_1_B2,Colorado,Drosophila melanogaster,y,n,y,0,25.905,B,16.992,y,n,-,y,n,0,0,0,0,0,1,0,1,0,0,sin,-,
+Peach_10_F10,Colorado,Drosophila melanogaster,y,y,n,13.981,13.240,A,16.740,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,A,"PQ625140, PQ625039, PQ624935"
+Peach_11_F11,Colorado,Drosophila melanogaster,n,-,y,28.904,28.930,A,16.917,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+Peach_12_H1,Colorado,Drosophila melanogaster,n,-,y,24.539,0,A,17.458,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+Peach_13_H7,Colorado,Drosophila melanogaster,y,y,n,29.669,28.319,A,20.980,y,y,y,y,y,5,1,1,2,1,5,1,1,2,1,co,A,"PQ625199, PQ625141, PQ625040, PQ624936, PQ624937"
+Peach_2_B4,Colorado,Drosophila melanogaster,y,n,n,24.667,19.981,A,16.173,n,y,n,y,n,0,0,0,0,0,4,1,1,1,1,sin,-,
+Peach_3_B5,Colorado,Drosophila melanogaster,y,n,n,22.528,22.010,A,15.876,n,n,-,y,n,0,0,0,0,0,3,1,1,1,0,sin,-,
+Peach_4_B7,Colorado,Drosophila melanogaster,y,n,n,23.697,23.020,A,16.488,n,n,-,y,n,0,0,0,0,0,3,1,1,1,0,sin,-,
+Peach_5_B9,Colorado,Drosophila melanogaster,y,n,n,23.957,23.699,A,15.787,n,y,n,y,n,0,0,0,0,0,4,1,1,1,1,sin,-,
+Peach_6_E5,Colorado,Drosophila melanogaster,n,-,y,31.005,28.900,B,19.454,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+Peach_7_F6,Colorado,Drosophila melanogaster,n,-,y,27.907,27.463,A,16.875,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,
+Peach_8_F7,Colorado,Drosophila melanogaster,y,y,n,13.310,12.915,A,17.122,y,n,-,y,y,3,1,1,1,0,3,1,1,1,0,sin,A,"PQ625138, PQ625037, PQ624933"
+Peach_9_F8,Colorado,Drosophila melanogaster,y,y,n,13.842,13.133,A,16.921,y,n,n,y,y,3,1,1,1,0,4,1,1,1,1,sin,A,"PQ625139, PQ625038, PQ624934"
+Penn-F-1,Pennsylvania,Drosophila melanogaster,y,n,n,23.446,25.828,A,25.562,n,y,y,y,n,3,0,1,1,1,4,1,1,1,1,sin,A,"PQ625200, PQ625041, PQ624938"
+Penn-F-12,Pennsylvania,Drosophila melanogaster,y,y,n,20.238,18.505,A,20.310,y,y,y,y,y,4,1,1,1,1,5,1,1,1,2,co,A,"PQ625207, PQ625147, PQ625049, PQ624944"
+Penn-F-2,Pennsylvania,Drosophila melanogaster,y,n,n,11.108,11.347,A,22.654,n,y,y,y,y,5,1,1,1,2,5,1,1,1,2,co,A,"PQ625201, PQ625202, PQ625142, PQ625042, PQ624939"
+Penn-F-3,Pennsylvania,Drosophila melanogaster,y,y,n,15.761,14.769,A,19.096,y,y,y,y,y,4,1,1,1,1,6,1,2,1,2,co,A,"PQ625203, PQ625143, PQ625043, PQ624940"
+Penn-F-4,Pennsylvania,Drosophila melanogaster,y,y,n,22.435,18.712,A,20.670,y,y,y,y,y,7,2,2,2,1,7,2,2,2,1,co,A_B,"PQ625204, PQ625144, PQ625145, PQ625044, PQ625045, PQ624941, PQ624942"
+Penn-F-6,Pennsylvania,Drosophila melanogaster,y,y,n,28.293,21.602,A,26.920,y,y,y,y,n,3,0,2,0,1,5,1,2,1,1,co,A_B,"PQ625205, PQ625046, PQ625047"
+Penn-F-9,Pennsylvania,Drosophila melanogaster,y,y,n,13.166,11.794,A,23.146,y,y,y,y,n,4,1,1,1,1,7,1,2,2,2,co,A,"PQ625206, PQ625146, PQ625048, PQ624943"
+Penn-M-10,Pennsylvania,Drosophila melanogaster,y,y,n,12.406,10.235,A,20.795,y,y,y,y,y,4,1,1,1,1,6,1,1,2,2,co,A,"PQ625211, PQ625150, PQ625052, PQ624948"
+Penn-M-11,Pennsylvania,Drosophila melanogaster,y,y,n,26.698,23.465,A,24.774,y,y,y,y,n,3,0,1,1,1,6,1,1,2,2,co,A,"PQ625212, PQ625053, PQ624949"
+Penn-M-14,Pennsylvania,Drosophila melanogaster,y,y,n,21.869,20.345,A,22.558,y,y,y,y,n,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625213, PQ625151, PQ625054, PQ624950"
+Penn-M-15,Pennsylvania,Drosophila melanogaster,y,n,n,13.570,12.292,A,22.887,n,y,n,y,y,3,1,1,1,0,5,1,1,1,2,co,A,"PQ625152, PQ625055, PQ624951"
+Penn-M-2,Pennsylvania,Drosophila melanogaster,y,y,n,21.769,20.377,A,24.188,y,y,y,y,y,6,1,1,2,2,6,1,1,2,2,co,A_B,"PQ625208, PQ625209, PQ625148, PQ625050, PQ624945, PQ624946"
+Penn-M-8,Pennsylvania,Drosophila melanogaster,y,y,n,23.279,24.297,A,24.870,y,y,y,y,y,4,1,1,1,1,4,1,1,1,1,sin,A,"PQ625210, PQ625149, PQ625051, PQ624947"
+sim-20-AG-3,Colorado,Drosophila melanogaster,y,n,y,27.726,27.296,A,15.388,y,y,n,y,n,0,0,0,0,0,2,0,0,1,1,sin,-,
+sim-20-TD-4,Colorado,Drosophila melanogaster,y,y,n,33.531,17.980,B,14.877,y,n,-,y,y,4,1,1,2,0,4,1,1,2,0,co,B,"PQ625058, PQ624954, PQ624843, PQ624844"
+sim-20-TD-5,Colorado,Drosophila melanogaster,n,-,y,28.556,27.198,A,12.559,y,n,-,n,-,0,0,0,0,0,0,0,0,0,0,-,-,

@@ -44,7 +44,7 @@ D_mel_USA_2023_ME-M-8_Chaq_virus_Complete_CDS,PQ625195,Maine,2023,melanogaster
 D_mel_USA_2023_ME-M-11_Chaq_virus_Complete_CDS,PQ625196,Maine,2023,melanogaster
 D_mel_USA_2023_Myrtle-E9_Chaq_virus_Complete_CDS,PQ625197,Colorado,2023,melanogaster
 D_mel_USA_2023_OH-M-5_Chaq_virus_Complete_CDS,PQ625198,Ohio,2023,melanogaster
-D_mel_USA_2023_Peach-13-H7_Chaq_virus_Complete_CDS,PQ625199,Unknown,2023,melanogaster
+D_mel_USA_2023_Peach-13-H7_Chaq_virus_Complete_CDS,PQ625199,Colorado,2023,melanogaster
 D_mel_USA_2023_Penn-F-1_Chaq_virus_Complete_CDS,PQ625200,Pennsylvania,2023,melanogaster
 D_mel_USA_2023_Penn-F-2_Chaq_virus_Complete_CDS_1,PQ625201,Pennsylvania,2023,melanogaster
 D_mel_USA_2023_Penn-F-2_Chaq_virus_Complete_CDS_2,PQ625202,Pennsylvania,2023,melanogaster
@@ -104,4 +104,4 @@ D_sim_USA_2023_ME-M-3_Chaq_virus_Complete_CDS,PQ625214,Maine,2023,undetermined
 ,OR820567,Illinois,1930,melanogaster
 ,OR820571,Minnesota,1919,melanogaster
 ,OR820594,California,2000,simulans
-SRX10234784_Chaq,SRX10234784,Australia,2018,simulans
+PV185880,SRX10234784_Chaq,Australia,2018,simulans

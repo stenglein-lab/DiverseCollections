@@ -49,6 +49,11 @@ all_significant <- rbind(significant_diversifying, significant_purifying)
 
 # how long are coding sequence?
 # these #s based on FoCo17 sequences, MT742160 - MT742163
+
+# *!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!
+# NOTE!  The codons in the table above extend beyond these apparent sizes.  Need to check!
+# *!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!
+
 RNA1_codons <- 541
 RNA2_codons <- 495
 RNA3_codons <- 443
@@ -74,10 +79,12 @@ ggplot(all_significant) +
   theme_bw(base_size = 12) +
   theme(axis.text.y=element_blank(), 
         axis.ticks.y=element_blank(),
-        strip.text = element_text(hjust=0),
+        strip.text = element_text(hjust=0.03),
         strip.background = element_blank(),
         panel.grid = element_blank(),
         panel.border = element_blank()) +
   scale_color_manual(values=c("coral3", "slateblue")) + 
   xlab("Codon") +
   ylab("")
+
+ggsave("analyses/plots/Fig_X_sites_under_selection.pdf", width=7.5, height=6, units="in")

@@ -22,13 +22,17 @@ distances <- rbind(RNA1_dist, RNA2_dist, RNA3_dist, Chaq_dist)
 # "For example, if identity between 2 sequences is 80 the squared root of (1.0 - 0.8) i.e. 0.4472136"
 pairwise_percent_identities <- distances %>% mutate(pct_identity = 100 * (1-(distance^2)))
 
+pairwise_percent_identities$segment <- fct_relevel(pairwise_percent_identities$segment, "Chaq", after=3)
+
 # plot histogram of pairwise percent identities
 ggplot(pairwise_percent_identities) +
   geom_histogram(aes(x=pct_identity), bins=101) +
-  facet_wrap(~segment, ncol = 1) +
+  facet_wrap(~segment, ncol = 1, scales="free_y") +
   theme_bw(base_size = 12) +
-  xlab("Pairwise percent nucleotide identity") +
-  ylab("Number pairwise comparisons")
+  xlab("Pairwise nucleotide identity (%)") +
+  ylab("Number pairwise alignments")
+
+ggsave("analyses/plots/Fig_8_pairwise_pct_identity_by_segment.pdf", width=10, height=7.5, units="in")
 
 # calculate averages and stats
 

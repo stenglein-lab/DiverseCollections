@@ -18,6 +18,10 @@ RNA2 <- read.csv("analyses/trees/RNA2/RNA2_Seq_IDs.csv")
 RNA3 <- read.csv("analyses/trees/RNA3/RNA3_SeqIDs.csv")
 Chaq <- read.csv("analyses/trees/Chaq/Chaq_Seq_IDs.csv")
 
+RNA1$sample_id <- paste(RNA1$location, RNA1$street, RNA1$date, RNA1$accession, sep = "_")
+RNA1_ids <- RNA1 %>% 
+  select(accession, sample_id)
+
 RNA1$sample_id <- paste(RNA1$location, RNA1$date, RNA1$accession, sep = "_")
 RNA1_ids <- RNA1 %>% 
   select(accession, sample_id)

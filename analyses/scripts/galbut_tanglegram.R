@@ -3,16 +3,12 @@ library(ape)
 library(tidyverse)
 library(readxl)
 
-# a script to create a galbut virus RNA1/RNA2 tanglegram
-# MDS 12/19/2024
-
-# RNA1 RNA2
-# read in 2 individual trees
-# use ape read.tree
-RNA1 <- read.tree("analyses/trees/RNA1/RNA1_nucleotide_alignment.fasta.contree")
-RNA2 <- read.tree("analyses/trees/RNA2/RNA2_nucleotide_alignment.fasta.contree")
-RNA3 <- read.tree("analyses/trees/RNA3/RNA3_nucelotide_alignment.fasta.contree")
-Chaq <- read.tree("analyses/trees/Chaq/Chaq_alignment_recomb_removed.fasta.contree")
+## Remake trees with coinfection samples removed
+# Read in new trees
+RNA1 <- read.tree("analyses/trees/tanglegrams/RNA1_no_coinfection.fasta.contree")
+RNA2 <- read.tree("analyses/trees/tanglegrams/RNA2_no_coinfection.fasta.contree")
+RNA3 <- read.tree("analyses/trees/tanglegrams/RNA3_no_coinfection.fasta.contree")
+Chaq <- read.tree("analyses/trees/tanglegrams/Chaq_no_coinfection.fasta.contree")
 
 # midpoint root both trees
 rna1_tree_rooted <- midpoint_root(RNA1)
@@ -55,22 +51,22 @@ Chaq_id <- Chaq_id %>%
   mutate(isolate = coalesce(isolate, accession)) %>% 
   select(isolate, id, accession)
 
-# Manually fix a few names (EVE, SRA seqs, available seqs)
-write.csv(RNA1_id, file = "analyses/trees/RNA1_newnames.csv")
-RNA1_id <- read_csv("analyses/trees/RNA1_newnames.csv") %>% 
+# Manually fix a few names (EVE, SRA seqs, available seqs, remove coinfections)
+#write.csv(RNA1_id, file = "analyses/trees/tanglegrams/RNA1_newnames.csv")
+RNA1_id <- read_csv("analyses/trees/tanglegrams/RNA1_newnames.csv") %>% 
   rename("RNA1" = id)
 
-write.csv(RNA2_id, file = "analyses/trees/RNA2_newnames.csv")
-RNA2_id <- read_csv("analyses/trees/RNA2_newnames.csv") %>% 
+#write.csv(RNA2_id, file = "analyses/trees/tanglegrams/RNA2_newnames.csv")
+RNA2_id <- read_csv("analyses/trees/tanglegrams/RNA2_newnames.csv") %>% 
   rename("RNA2" = id)
 
 
-write.csv(RNA3_id, file = "analyses/trees/RNA3_newnames.csv")
-RNA3_id <- read_csv("analyses/trees/RNA3_newnames.csv") %>% 
+#write.csv(RNA3_id, file = "analyses/trees/tanglegrams/RNA3_newnames.csv")
+RNA3_id <- read_csv("analyses/trees/tanglegrams/RNA3_newnames.csv") %>% 
   rename("RNA3" = id)
 
-write.csv(Chaq_id, file = "analyses/trees/Chaq_newnames.csv")
-Chaq_id <- read_csv("analyses/trees/Chaq_newnames.csv") %>% 
+#write.csv(Chaq_id, file = "analyses/trees/tanglegrams/Chaq_newnames.csv")
+Chaq_id <- read_csv("analyses/trees/tanglegrams/Chaq_newnames.csv") %>% 
   rename("Chaq" = id)
 
 # Combine label dfs
@@ -109,7 +105,7 @@ assoc_1 <- assoc_1_2$RNA1
 assoc_2 <- assoc_1_2$RNA2
 
 assoc <- cbind(assoc_1, assoc_2)
-  
+
 # RNA 1 and 2
 # make cophylogeny (this makes the object but doesn't plot it yet)
 cophy <- cophylo(rna1_tree_relabeled, rna2_tree_relabeled, assoc = assoc)
@@ -293,6 +289,4 @@ plot.cophylo(cophy,
 
 # turn off PDF
 dev.off()
-
-
 

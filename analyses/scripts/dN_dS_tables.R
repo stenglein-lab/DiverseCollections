@@ -56,7 +56,7 @@ all_significant <- rbind(significant_diversifying, significant_purifying)
 
 RNA1_codons <- 541
 RNA2_codons <- 495
-RNA3_codons <- 443
+RNA3_codons <- 449
 Chaq_codons <- 320
 
 codon_lengths <- tibble(
@@ -76,15 +76,13 @@ ggplot(all_significant) +
                aes(x=codon, xend=codon, y=0, yend=1, color=selection_type),
                linewidth=1) +
   facet_wrap(~segment, ncol = 1) + 
-  theme_bw(base_size = 12) +
-  theme(axis.text.y=element_blank(), 
-        axis.ticks.y=element_blank(),
-        strip.text = element_text(hjust=0.03),
-        strip.background = element_blank(),
-        panel.grid = element_blank(),
-        panel.border = element_blank()) +
+  theme_minimal(base_size = 11) +
+  theme(strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 0, hjust = 1, vjust = 1)) +
   scale_color_manual(values=c("coral3", "slateblue")) + 
-  xlab("Codon") +
-  ylab("")
+  labs(x = "Codon", y = "", color = "Selection Type") 
 
-ggsave("analyses/plots/Fig_X_sites_under_selection.pdf", width=7.5, height=6, units="in")
+ggsave("analyses/plots/Fig_9_sites_under_selection.pdf", width=7.5, height=6, units="in")

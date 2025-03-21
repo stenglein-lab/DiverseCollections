@@ -176,7 +176,7 @@ ggsave("analyses/plots/heatmap_sin_me.pdf", units = "in", width = 14, height = 8
 heatmap_pe_sin <- ggplot(filter(heatmap_sin_pe, segment %in% c("Chaq_total", "RNA3_total",
                                                           "RNA2_total", "RNA1_total"))) +
   geom_tile(aes(x = sample_name, y = segment, fill = factor(number), height = 0.95)) +
-  scale_fill_manual(values = c("#9ecae1", "#3182bd", "#08519c")) +
+  scale_fill_manual(values = c("#9ecae1")) +
   theme_minimal(base_size = 11) +
   theme(panel.border = element_rect(linetype = "solid", fill = NA),
         strip.background = element_rect(colour = "black", fill = "white"),
@@ -194,7 +194,7 @@ ggsave("analyses/plots/heatmap_sin_pe.pdf", units = "in", width = 14, height = 8
 heatmap_oh_sin <- ggplot(filter(heatmap_sin_oh, segment %in% c("Chaq_total", "RNA3_total",
                                                                "RNA2_total", "RNA1_total"))) +
   geom_tile(aes(x = sample_name, y = segment, fill = factor(number), height = 0.95)) +
-  scale_fill_manual(values = c("#9ecae1", "#3182bd", "#08519c")) +
+  scale_fill_manual(values = c("white", "#9ecae1")) +
   theme_minimal(base_size = 11) +
   theme(panel.border = element_rect(linetype = "solid", fill = NA),
         strip.background = element_rect(colour = "black", fill = "white"),

@@ -1,4 +1,6 @@
 library(tidyverse)
+library(FSA)
+library(broom)
 
 qPCR <- read_csv("analyses/data/qPCR_TidyData_LK_20240403.csv") %>% 
   mutate(target = str_replace(target, "galbut_1600_1601", "Galbut A"),
@@ -66,7 +68,7 @@ ct_norm
 ggsave("ct_norm.pdf", units = "in", width = 10, height = 8)  
 
 
-# Prevalence over time
+# Over time
 over_time <- ggplot(filter(qPCR_wide, location %in% c("Rampart", "Wabash"))) +
   geom_jitter(aes(x = factor(date, levels = c("July", "August", "September", 
                                               "October")), y = relative, 
@@ -87,6 +89,7 @@ over_time <- ggplot(filter(qPCR_wide, location %in% c("Rampart", "Wabash"))) +
 
 over_time
 ggsave("over_time.pdf", units = "in", width = 10, height = 8)  
+
 
 # STATS
 # logistic glm of positive and location
@@ -114,4 +117,105 @@ summary(time_stat_r)
 
 descriptive <- qPCR_wide %>% 
   group_by(location, positive_galbut_A_B) %>% 
-  summarise(n = n())
+  summarise(n = n()) 
+
+tot_loc <- qPCR_wide %>% 
+  group_by(location) %>% 
+  summarise(tot = n())
+
+desc_loc <- left_join(descriptive, tot_loc, by = "location") %>% 
+  mutate(prev = (n/tot)*100) %>% 
+  filter(positive_galbut_A_B == "Yes")
+
+prev_loc <- ggplot(desc_loc, aes(x = factor(location, levels = c("Adobe", "Briarwood", 
+                                                                 "Elm", "James", 
+                                                                 "JFK Parkway", 
+                                                                 "Linden", "Myrtle", 
+                                                                 "Rampart", "Wabash", "Maine", 
+                                                                 "Ohio", "Pennsylvania")), 
+                                 y = prev)) +
+  geom_point(aes(fill = factor(location, levels = c("Adobe", "Briarwood", 
+                                                    "Elm", "James", 
+                                                    "JFK Parkway", 
+                                                    "Linden", "Myrtle", 
+                                                    "Rampart", "Wabash", "Maine", 
+                                                    "Ohio", "Pennsylvania"))),
+             shape = 21, size = 6) +
+  scale_fill_manual(values = c("chocolate", "chocolate1", "chocolate4", "coral",
+                                 "coral2", "coral4", "darkorange","darkorange2",
+                                 "darkorange4", "#00FFFF","#00CCCC","#006666")) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 90, hjust = 1, vjust = 1)) +
+  labs(x = "Sample Location", y = "Percent Positive", 
+       fill = "Sample Location")
+
+prev_loc
+ggsave("analyses/plots/prev_loc.pdf", units = "in", width = 10, height = 8) 
+  
+desc_time <- qPCR_wide %>% 
+  filter(location %in% c("Rampart", "Wabash")) %>% 
+  group_by(location, positive_galbut_A_B, date) %>% 
+  summarise(n = n()) 
+
+     
+tot_time <- qPCR_wide %>% 
+  filter(location %in% c("Rampart", "Wabash")) %>% 
+  group_by(location, date) %>% 
+  summarise(tot = n())
+
+desc_time <- left_join(desc_time, tot_time, by = c("location", "date")) %>% 
+  mutate(prev = (n/tot)*100) %>% 
+  filter(positive_galbut_A_B == "Yes")
+
+prev_time <- ggplot(desc_time, aes(x = factor(date, levels = c("July", "August", "September", 
+                                                               "October")), 
+                                 y = prev)) +
+  geom_point(aes(fill = factor(location, levels = c("Rampart", "Wabash"))),
+             shape = 21, size = 6) +
+  scale_fill_manual(values = c("darkorange2", "darkorange4")) +
+  ylim(0, 100) +
+  facet_wrap(~location, nrow = 2) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 90, hjust = 1, vjust = 1)) +
+  labs(x = "Sample Location", y = "Percent Positive", 
+       fill = "Sample Location")
+
+prev_time
+ggsave("analyses/plots/prev_time.pdf", units = "in", width = 10, height = 8) 
+
+# Non parametric anova (Kruskal-Wallis test)- is there a difference between location
+diff_loc <- qPCR_wide %>% 
+  select(location, relative)
+
+kruskal.test(relative ~ location, data = diff_loc)
+
+diff_comp <- dunnTest(relative ~ location, data = diff_loc, method = "bonferroni", list = TRUE)
+loc_comp_df <- diff_comp[['res']]
+
+# Is there a difference over time?
+diff_time_ramp <- qPCR_wide %>% 
+  filter(location == "Rampart") %>% 
+  select(relative, date, location)
+
+kruskal.test(relative ~ date, data = diff_time_ramp)
+diff_comp_ram <- dunnTest(relative ~ date, data = diff_time_ramp, method = "bonferroni", list = TRUE)
+loc_comp_ram <- diff_comp_ram[['res']]
+
+diff_time_wab <- qPCR_wide %>% 
+  filter(location == "Wabash") %>% 
+  select(relative, date, location)
+
+kruskal.test(relative ~ date, data = diff_time_wab)
+diff_comp_wab <- dunnTest(relative ~ date, data = diff_time_wab, method = "bonferroni", list = TRUE)
+loc_comp_wab <- diff_comp_wab[['res']]
+

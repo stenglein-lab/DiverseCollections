@@ -29,6 +29,13 @@ ggplot(pairwise_percent_identities) +
   geom_histogram(aes(x=pct_identity), bins=101) +
   facet_wrap(~segment, ncol = 1, scales="free_y") +
   theme_bw(base_size = 12) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 0, hjust = 1, vjust = 1)) +
   xlab("Pairwise nucleotide identity (%)") +
   ylab("Number pairwise alignments")
 

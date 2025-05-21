@@ -2,6 +2,7 @@ library(phytools)
 library(ape)
 library(tidyverse)
 library(readxl)
+library(TreeTools)
 
 ## Remake trees with coinfection samples removed
 # Read in new trees
@@ -193,6 +194,34 @@ plot.cophylo(cophy,
 # turn off PDF
 dev.off()
 
+# ----------------------------------------------------------------------------------------------
+# *** Chaq Tanglegrams **
+#
+# There is an issue with chaq tanglegrams: because chaq is never present in clade B infections,
+# there is a "missing" clade in galbut-chaq tanglegrams. 
+#
+# This causes tanglegrams to not look great: spacing is off
+# 
+# To fix this, add in a stand-in subtree to make chaq-containing tanglegrams align better. 
+#
+# This will be an artifical clade in the trees that we will delete manually 
+# after tanglegram creation and PDF export
+# ----------------------------------------------------------------------------------------------
+
+
+# add a new branch of length 0.2 to root of chaq tree to start filler clade
+chaq_tree_with_filler <- AddTip(Chaq_tree_relabeled, where = 0, edgeLength=0.2, label="filler_clade")
+
+# add 18 new filler tips on 0-length branches to simulate "missing" clade B chaq sequences
+for (new_tip in 1:17) {
+  # add as polytomy
+  chaq_tree_with_filler <- AddTip(chaq_tree_with_filler, 
+                                  where = "filler_clade", 
+                                  edgeLength=0,
+                                  lengthBelow = 0,
+                                  label=paste0("filler_tip_", new_tip))
+}
+# ggtree(chaq_tree_with_filler) + geom_tiplab(size=2)
 
 # RNA1 Chaq
 # Make association for labels
@@ -204,8 +233,9 @@ assoc_c <- assoc_1_c$Chaq
 
 assoc <- cbind(assoc_1, assoc_c)
 
+
 # make cophylogeny (this makes the object but doesn't plot it yet)
-cophy <- cophylo(rna1_tree_relabeled, Chaq_tree_relabeled, assoc = assoc)
+cophy <- cophylo(rna1_tree_relabeled, chaq_tree_with_filler, assoc = assoc)
 
 # will save as PDF
 pdf(file = "analyses/trees/tanglegrams/rna1_Chaq_tanglegram.pdf", width=8.5, height=11)
@@ -237,7 +267,7 @@ assoc_c <- assoc_2_c$Chaq
 assoc <- cbind(assoc_2, assoc_c)
 
 # make cophylogeny (this makes the object but doesn't plot it yet)
-cophy <- cophylo(rna2_tree_relabeled, Chaq_tree_relabeled, assoc = assoc)
+cophy <- cophylo(rna2_tree_relabeled, chaq_tree_with_filler, assoc = assoc)
 
 # will save as PDF
 pdf(file = "analyses/trees/tanglegrams/rna2_Chaq_tanglegram.pdf", width=8.5, height=11)
@@ -269,7 +299,7 @@ assoc_c <- assoc_3_c$Chaq
 assoc <- cbind(assoc_3, assoc_c)
 
 # make cophylogeny (this makes the object but doesn't plot it yet)
-cophy <- cophylo(rna3_tree_relabeled, Chaq_tree_relabeled, assoc = assoc)
+cophy <- cophylo(rna3_tree_relabeled, chaq_tree_with_filler, assoc = assoc)
 
 # will save as PDF
 pdf(file = "analyses/trees/tanglegrams/rna3_Chaq_tanglegram.pdf", width=8.5, height=11)

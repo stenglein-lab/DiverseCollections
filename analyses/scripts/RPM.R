@@ -24,26 +24,19 @@ remap_comp_all <- left_join(remapping, all_counts, by = "id") %>%
   mutate(rpm = ((num_reads/count)*1000000))
 
 remap_part <- read_xlsx("analyses/remapping_seqs/partials/num_aligned_partials.xlsx") %>% 
-  filter(align_seq != "MW976848")
+  filter(align_seq != "MW976848",
+         num_reads >= 10)
 
 remap_part_wide <- pivot_wider(remap_part, names_from = c(align_seq, segment), values_from = num_reads) %>% 
   mutate_all(~replace(., is.na(.), 0)) %>% 
   mutate(chaq_total = (`D_mel_USA_2023_1428-M-42_Chaq_virus_Complete_CDS_Chaq` + 
-                         `D_mel_USA_2023_ME-M-8_Chaq_virus_Complete_CDS_Chaq` +
                          `D_mel_USA_2023_1020-M-0818-A7_Chaq_virus_Complete_CDS_Chaq` +
-                         `D_mel_USA_2023_OH-M-5_Chaq_virus_Complete_CDS_Chaq` +
-                         `D_mel_USA_2023_Penn-M-2_Chaq_virus_Complete_CDS_2_Chaq`),
-         RNA1_total = (MT742164_1 + `D_mel_USA_2023_ME-M-7_Galbut_virus_RNA1_Complete_CDS_1_1` +
-                         `D_mel_USA_2023_ME-F-1_Galbut_virus_RNA1_Complete_CDS_1`),
-         RNA2_total = (`D_mel_USA_2023_CVID-1006-G7_Galbut_virus_RNA2_Complete_CDS_2` + 
-                         `D_mel_USA_2023_ME-M-4_Galbut_virus_RNA2_Complete_CDS_2` +
-                         `D_mel_USA_2023_500-M-G2_Galbut_virus_RNA2_Complete_CDS_2`),
+                         `D_mel_USA_2023_OH-M-5_Chaq_virus_Complete_CDS_Chaq`),
+         RNA1_total = (MT742164_1),
+         RNA2_total = (`D_mel_USA_2023_CVID-1006-G7_Galbut_virus_RNA2_Complete_CDS_2`),
          RNA3_total = (`D_mel_USA_2023_500-F-41_Galbut_virus_RNA3_Complete_CDS_1_3` +
                          `D_mel_USA_2023_1428-M-42_Galbut_virus_RNA3_Complete_CDS_3` +
-                         `D_mel_USA_2023_Adobe-B4_Galbut_virus_RNA3_Complete_CDS_3` +
-                         `D_mel_USA_2023_500-M-G2_Galbut_virus_RNA3_Complete_CDS_3` +
-                         `MH384362_3` +
-                         `D_mel_USA_2023_500-M-61-2_Galbut_virus_RNA3_Complete_CDS_3`)) %>% 
+                         `D_mel_USA_2023_Adobe-B4_Galbut_virus_RNA3_Complete_CDS_3`)) %>% 
   select(id, chaq_total, RNA1_total, RNA2_total, RNA3_total) %>% 
   mutate(total = (chaq_total + RNA1_total + RNA2_total + RNA3_total)) 
 
@@ -100,14 +93,14 @@ remap_all <- remap_all[-c(103), ]
 remap_all[120, 3] <- remap_all[120, 3] + remap_all[122, 3]
 remap_all <- remap_all[-c(122), ]
 
-remap_all[276, 3] <- remap_all[276, 3] + remap_all[279, 3]
-remap_all <- remap_all[-c(279), ]
-
-remap_all[281, 3] <- remap_all[281, 3] + remap_all[284, 3]
-remap_all <- remap_all[-c(284), ]
-
 remap_all[227, 3] <- remap_all[227, 3] + remap_all[229, 3]
 remap_all <- remap_all[-c(229), ]
+
+remap_all[275, 3] <- remap_all[275, 3] + remap_all[278, 3]
+remap_all <- remap_all[-c(278), ]
+
+remap_all[280, 3] <- remap_all[280, 3] + remap_all[283, 3]
+remap_all <- remap_all[-c(283), ]
 
 remap_all[301, 3] <- remap_all[301, 3] + remap_all[304, 3]
 remap_all <- remap_all[-c(304), ]
@@ -133,6 +126,7 @@ remap_all <- remap_all[-c(318), ]
 
 remap_all[351, 3] <- remap_all[351, 3] + remap_all[355, 3]
 remap_all <- remap_all[-c(355), ]
+
 
 #calculate rpm
 remap_all <- remap_all %>% 
@@ -178,22 +172,26 @@ ggsave("analyses/plots/RPM_vs_qPCR.pdf", units = "in", width = 10, height = 8)
 
 # Get total RPM
 remap_all_wide <- remap_all %>% 
-  select(id, count, num_reads, segment, rpm, infection_status, clade, chaq_present) %>% 
-  pivot_wider(names_from = segment, values_from = c(num_reads, count, rpm )) %>% 
-  mutate(rpm_Chaq = if_else(is.na(rpm_Chaq), 0, rpm_Chaq)) %>% 
-  mutate(rpm_RNA1 = if_else(is.na(rpm_RNA1), 0, rpm_RNA1)) %>% 
-  mutate(rpm_RNA3 = if_else(is.na(rpm_RNA3), 0, rpm_RNA3)) %>% 
-  mutate(rpm_RNA2 = if_else(is.na(rpm_RNA2), 0, rpm_RNA2)) %>% 
-  mutate(rpm_total = (rpm_Chaq + rpm_RNA1 + rpm_RNA2 + rpm_RNA3))
+  select(id, segment, rpm, infection_status, clade, chaq_present) %>% 
+  pivot_wider(names_from = segment, values_from = rpm, values_fill = 0) %>% 
+  mutate(rpm_total = (RNA2 + RNA1 + RNA3 + Chaq))
+
+all_rpm <- remap_all_wide %>% 
+  select(id, rpm_total) %>% 
+  mutate(id = str_replace(id, "-", "_")) %>% 
+  rename(sample_name = id)
+
+write_csv(all_rpm, "analyses/data/all_rpm_counts.csv")
 
 # Filter coinfections out
 remap_no_co <- remap_all_wide %>% 
-  filter(infection_status == "sin")
+  filter(infection_status == "sin") %>% 
+  filter(clade != "-")
 
 A_vs_B <- ggplot(remap_no_co, aes(x = clade, y = rpm_total)) +
   geom_boxplot() +
   geom_jitter(aes(color = clade), height = 0, width = 0.15, size = 2.5, alpha = 0.85) +
-  scale_color_manual(values = c("darkolivegreen", "slateblue4", "pink")) +
+  scale_color_manual(values = c("darkolivegreen", "slateblue4")) +
   scale_y_log10() +
   theme_minimal(base_size = 11) +
   theme(panel.border = element_rect(linetype = "solid", fill = NA),
@@ -202,14 +200,15 @@ A_vs_B <- ggplot(remap_no_co, aes(x = clade, y = rpm_total)) +
         axis.text = element_text(face = "bold"),
         text = element_text(size = 20),
         axis.text.x = element_text(angle = 0, hjust = 1, vjust = 1)) +
-  labs(y = "Total Galbut Virus Reads Per Million \n(log10)", x = "Galbut Virus Clade",
+  labs(y = "Total Galbut Virus Reads Per Million", x = "Galbut Virus Clade",
        color = "Galbut Virus Clade")
 
 A_vs_B  
 ggsave("analyses/plots/clade_vs_rpm.pdf", units = "in", width = 10, height = 8) 
 
 all_A <- remap_all_wide %>% 
-  filter(clade == "A")
+  filter(clade == "A") %>% 
+  filter(infection_status == "sin")
 
 Chaq_vs_noChaq <- ggplot(all_A, aes(x = chaq_present, y = rpm_total)) +
   geom_boxplot() +

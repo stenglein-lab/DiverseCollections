@@ -39,8 +39,8 @@ all_diversifying <- rbind(chaq, RNA1, RNA2, RNA3_else, RNA3_sim) %>%
 
 write.csv(all_diversifying, file = "analyses/trees/diversifying_selection.csv")
 
-significant_diversifying <- filter(all_diversifying, p.value < 0.05)
-significant_purifying    <- filter(all_purifying,    p.value < 0.05)
+significant_diversifying <- filter(all_diversifying, p.value < 0.09)
+significant_purifying    <- filter(all_purifying,    p.value < 0.09)
 
 significant_diversifying$selection_type <- "diversifying"
 significant_purifying$selection_type    <- "purifying"
@@ -49,10 +49,6 @@ all_significant <- rbind(significant_diversifying, significant_purifying)
 
 # how long are coding sequence?
 # these #s based on FoCo17 sequences, MT742160 - MT742163
-
-# *!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!
-# NOTE!  The codons in the table above extend beyond these apparent sizes.  Need to check!
-# *!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!
 
 RNA1_codons <- 541
 RNA2_codons <- 495

@@ -93,11 +93,11 @@ PQ624929 label #0000FF normal 1
 PQ624930 label #0000FF normal 1
 PQ624931 label #0000FF normal 1
 PQ624932 label #CC6600 normal 1
-PQ624933 label #741b47 normal 1
-PQ624934 label #741b47 normal 1
-PQ624935 label #741b47 normal 1
-PQ624936 label #741b47 normal 1
-PQ624937 label #741b47 normal 1
+PQ624933 NA
+PQ624934 NA
+PQ624935 NA
+PQ624936 NA
+PQ624937 NA
 PQ624938 label #5b5b5b normal 1
 PQ624939 label #5b5b5b normal 1
 PQ624940 label #5b5b5b normal 1
@@ -155,17 +155,17 @@ OR820576 label #134f5c normal 1
 OR820589 label #5b5b5b normal 1
 OR820597 label #0b5394 normal 1
 OR820601 label #0b5394 normal 1
-SRX10234776 label #b45f06 normal 1
-SRX10234777 label #b45f06 normal 1
-SRX10234778 label #b45f06 normal 1
-SRX10234779 label #b45f06 normal 1
-SRX10234780 label #b45f06 normal 1
-SRX10234781 label #b45f06 normal 1
-SRX10234782 label #b45f06 normal 1
-SRX10234784 label #b45f06 normal 1
-SRX10234785 label #b45f06 normal 1
-SRX10234786 label #b45f06 normal 1
-SRX10234787 label #b45f06 normal 1
-SRX10234788 label #b45f06 normal 1
-SRX10234789 label #b45f06 normal 1
-SRX10234790 label #b45f06 normal 1
+SRX10234776_RNA3 label #b45f06 normal 1
+SRX10234777_RNA3 label #b45f06 normal 1
+SRX10234778_RNA3 label #b45f06 normal 1
+SRX10234779_RNA3 label #b45f06 normal 1
+SRX10234780_RNA3 label #b45f06 normal 1
+SRX10234781_RNA3 label #b45f06 normal 1
+SRX10234782_RNA3 label #b45f06 normal 1
+SRX10234784_RNA3 label #b45f06 normal 1
+SRX10234785_RNA3 label #b45f06 normal 1
+SRX10234786_RNA3 label #b45f06 normal 1
+SRX10234787_RNA3 label #b45f06 normal 1
+SRX10234788_RNA3 label #b45f06 normal 1
+SRX10234789_RNA3 label #b45f06 normal 1
+SRX10234790_RNA3 label #b45f06 normal 1

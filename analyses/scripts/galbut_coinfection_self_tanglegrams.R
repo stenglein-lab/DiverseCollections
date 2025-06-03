@@ -12,16 +12,16 @@ id_acc_map$accession <- str_replace_all(id_acc_map$accession, " ", "")
 id_acc_map <- id_acc_map %>% separate_longer_delim(accession, delim=",") %>% filter(!is.na(accession))
 
 # Read in trees
-RNA1 <- read.tree("analyses/trees/RNA1/RNA1_nucleotide_alignment.fasta.contree")
-RNA2 <- read.tree("analyses/trees/RNA2/RNA2_nucleotide_alignment.fasta.contree")
-RNA3 <- read.tree("analyses/trees/RNA3/RNA3_nucelotide_alignment.fasta.contree")
-Chaq <- read.tree("analyses/trees/Chaq/Chaq_nucleotide_alignment.fasta.contree")
+RNA1_tree <- read.tree("analyses/trees/RNA1/RNA1_nucleotide_alignment.fasta.contree")
+RNA2_tree <- read.tree("analyses/trees/RNA2/RNA2_nucleotide_alignment.fasta.contree")
+RNA3_tree <- read.tree("analyses/trees/RNA3/RNA3_nucelotide_alignment.fasta.contree")
+Chaq_tree <- read.tree("analyses/trees/Chaq/Chaq_nucleotide_alignment.fasta.contree")
 
 # midpoint root both trees
-rna1_tree_rooted <- midpoint_root(RNA1)
-rna2_tree_rooted <- midpoint_root(RNA2)
-rna3_tree_rooted <- midpoint_root(RNA3)
-Chaq_tree_rooted <- midpoint_root(Chaq)
+rna1_tree_rooted <- midpoint_root(RNA1_tree)
+rna2_tree_rooted <- midpoint_root(RNA2_tree)
+rna3_tree_rooted <- midpoint_root(RNA3_tree)
+Chaq_tree_rooted <- midpoint_root(Chaq_tree)
 
 # Read in sequence ids
 RNA1 <- read_xlsx("analyses/trees/RNA1/RNA1_Seq_IDs.xlsx")
@@ -29,19 +29,25 @@ RNA2 <- read_xlsx("analyses/trees/RNA2/RNA2_Seq_IDs.xlsx")
 RNA3 <- read_xlsx("analyses/trees/RNA3/RNA3_SeqIDs.xlsx")
 Chaq <- read_xlsx("analyses/trees/Chaq/Chaq_Seq_IDs.xlsx")
 
-RNA1$sample_id <- paste(RNA1$location, RNA1$date, RNA1$accession, sep = "_")
+# join in sample IDs
+RNA1 <- left_join(RNA1, id_acc_map)
+RNA2 <- left_join(RNA2, id_acc_map)
+RNA3 <- left_join(RNA3, id_acc_map)
+Chaq <- left_join(Chaq, id_acc_map)
+
+RNA1$sample_id <- paste(RNA1$sample_name, RNA1$location, RNA1$date, RNA1$accession, sep = "_")
 RNA1_ids <- RNA1 %>% 
   select(accession, sample_id)
 
-RNA2$sample_id <- paste(RNA2$location, RNA2$date, RNA2$accession, sep = "_")
+RNA2$sample_id <- paste(RNA2$sample_name, RNA2$location, RNA2$date, RNA2$accession, sep = "_")
 RNA2_ids <- RNA2 %>% 
   select(accession, sample_id)
 
-RNA3$sample_id <- paste(RNA3$location, RNA3$date, RNA3$accession, sep = "_")
+RNA3$sample_id <- paste(RNA3$sample_name, RNA3$location, RNA3$date, RNA3$accession, sep = "_")
 RNA3_ids <- RNA3 %>% 
   select(accession, sample_id)
 
-Chaq$sample_id <- paste(Chaq$location, Chaq$date, Chaq$accession, sep = "_")
+Chaq$sample_id <- paste(Chaq$sample_name, Chaq$location, Chaq$date, Chaq$accession, sep = "_")
 Chaq_ids <- Chaq %>% 
   select(accession, sample_id)
 
@@ -63,8 +69,6 @@ rna1_tree_relabeled <- updateLabel(rna1_tree_rooted, old_tip_labels_1, new_tip_l
 rna2_tree_relabeled <- updateLabel(rna2_tree_rooted, old_tip_labels_2, new_tip_labels_2)
 rna3_tree_relabeled <- updateLabel(rna3_tree_rooted, old_tip_labels_3, new_tip_labels_3)
 Chaq_tree_relabeled <- updateLabel(Chaq_tree_rooted, old_tip_labels_c, new_tip_labels_c)
-
-new_tip_labels_1
 
 # -----------------------------------------
 # make self-tanglegram co-infection figure 

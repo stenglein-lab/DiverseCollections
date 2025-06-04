@@ -67,79 +67,8 @@ remap_all <- full_join(remap_comp_all, remap_part_all,
                        by = c("id", "count", "num_reads", "rpm", "segment")) %>% 
   select(id, count, num_reads, segment)
 
-# tally counts for cases of co-infection
+# tally counts in cases of co-infection
 remap_all <- remap_all %>% group_by(id, count, segment) %>% summarize(num_reads = sum(num_reads))
-
-# Combine rows with two RNA1s
-# remap_all[284, 3] <- remap_all[284, 3] + remap_all[287, 3]
-# remap_all <- remap_all[-c(287), ]
-# 
-# remap_all[340, 3] <- remap_all[340, 3] + remap_all[342, 3]
-# remap_all <- remap_all[-c(342), ]
-# 
-# 
-# #Combine rows with two RNA2s
-# remap_all[100, 3] <- remap_all[100, 3] + remap_all[101, 3]
-# remap_all <- remap_all[-c(101), ]
-# 
-# remap_all[282, 3] <- remap_all[282, 3] + remap_all[284, 3]
-# remap_all <- remap_all[-c(284), ]
-# 
-# remap_all[337, 3] <- remap_all[337, 3] + remap_all[339, 3]
-# remap_all <- remap_all[-c(339), ]
-# 
-# remap_all[341, 3] <- remap_all[341, 3] + remap_all[345, 3]
-# remap_all <- remap_all[-c(345), ]
-# 
-# #Combine rows with two RNA3s
-# remap_all[3, 3] <- remap_all[3, 3] + remap_all[4, 3]
-# remap_all <- remap_all[-c(4), ]
-# 
-# remap_all[38, 3] <- remap_all[38, 3] + remap_all[40, 3]
-# remap_all <- remap_all[-c(40), ]
-# 
-# remap_all[79, 3] <- remap_all[79, 3] + remap_all[80, 3]
-# remap_all <- remap_all[-c(80), ]
-# 
-# remap_all[100, 3] <- remap_all[100, 3] + remap_all[103, 3]
-# remap_all <- remap_all[-c(103), ]
-# 
-# remap_all[120, 3] <- remap_all[120, 3] + remap_all[122, 3]
-# remap_all <- remap_all[-c(122), ]
-# 
-# remap_all[276, 3] <- remap_all[276, 3] + remap_all[279, 3]
-# remap_all <- remap_all[-c(279), ]
-# 
-# remap_all[281, 3] <- remap_all[281, 3] + remap_all[284, 3]
-# remap_all <- remap_all[-c(284), ]
-# 
-# remap_all[227, 3] <- remap_all[227, 3] + remap_all[229, 3]
-# remap_all <- remap_all[-c(229), ]
-# 
-# remap_all[301, 3] <- remap_all[301, 3] + remap_all[304, 3]
-# remap_all <- remap_all[-c(304), ]
-# 
-# remap_all[327, 3] <- remap_all[327, 3] + remap_all[330, 3]
-# remap_all <- remap_all[-c(330), ]
-# 
-# remap_all[356, 3] <- remap_all[356, 3] + remap_all[359, 3]
-# remap_all <- remap_all[-c(359), ]
-# 
-# remap_all[363, 3] <- remap_all[363, 3] + remap_all[365, 3]
-# remap_all <- remap_all[-c(365), ]
-# 
-# #Combine rows with two Chaqs
-# remap_all[213, 3] <- remap_all[213, 3] + remap_all[214, 3]
-# remap_all <- remap_all[-c(214), ]
-# 
-# remap_all[261, 3] <- remap_all[261, 3] + remap_all[263, 3]
-# remap_all <- remap_all[-c(263), ]
-# 
-# remap_all[317, 3] <- remap_all[317, 3] + remap_all[318, 3]
-# remap_all <- remap_all[-c(318), ]
-# 
-# remap_all[351, 3] <- remap_all[351, 3] + remap_all[355, 3]
-# remap_all <- remap_all[-c(355), ]
 
 #calculate rpm
 remap_all <- remap_all %>% 

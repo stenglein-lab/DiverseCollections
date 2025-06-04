@@ -3,6 +3,9 @@ library(readxl)
 library(forcats)
 
 metadata <- read_xlsx("analyses/data/Metadata_Table.xlsx")
+all_rpm <- read_csv("analyses/data/all_rpm_counts.csv")
+
+metadata <- left_join(metadata, all_rpm, by = "sample_name")
 
 heatmap_data <- metadata %>% 
   select(sample_name, location, RNA1_submit, RNA2_submit, RNA3_submit, Chaq_submit,
@@ -18,7 +21,7 @@ heatmap_data <- metadata %>%
 
 heatmap_all <- ggplot(filter(heatmap_data, segment %in% c("Chaq_total", "RNA3_total",
                                                           "RNA2_total", "RNA1_total"))) +
-  geom_tile(aes(x = sample_name, y = segment, fill = factor(number), height = 0.5)) +
+  geom_tile(aes(x = sample_name, y = segment, fill = factor(number), height = 0.95)) +
   scale_fill_manual(values = c("white", "#9ecae1", "#3182bd", "#08519c")) +
   theme_minimal(base_size = 11) +
   theme(panel.border = element_rect(linetype = "solid", fill = NA),
@@ -194,7 +197,7 @@ ggsave("analyses/plots/heatmap_sin_pe.pdf", units = "in", width = 14, height = 8
 heatmap_oh_sin <- ggplot(filter(heatmap_sin_oh, segment %in% c("Chaq_total", "RNA3_total",
                                                                "RNA2_total", "RNA1_total"))) +
   geom_tile(aes(x = sample_name, y = segment, fill = factor(number), height = 0.95)) +
-  scale_fill_manual(values = c("white", "#9ecae1")) +
+  scale_fill_manual(values = c("#9ecae1")) +
   theme_minimal(base_size = 11) +
   theme(panel.border = element_rect(linetype = "solid", fill = NA),
         strip.background = element_rect(colour = "black", fill = "white"),

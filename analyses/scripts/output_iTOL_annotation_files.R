@@ -202,3 +202,43 @@ write.csv(RNA1, "analyses/trees/RNA1/RNA1_annotation_metadata.csv", row.names = 
 write.csv(RNA2, "analyses/trees/RNA2/RNA2_annotation_metadata.csv", row.names = FALSE, quote = FALSE)
 write.csv(RNA3, "analyses/trees/RNA3/RNA3_annotation_metadata.csv", row.names = FALSE, quote = FALSE)
 write.csv(Chaq, "analyses/trees/Chaq/Chaq_annotation_metadata.csv", row.names = FALSE, quote = FALSE)
+
+# Labels for Full Trees
+RNA1$sample_id <- paste(RNA1$location, RNA1$date, RNA1$sample_id, RNA1$accession, sep = "_")
+RNA1_ids <- RNA1 %>% 
+  select(accession, sample_id)
+
+RNA2$sample_id <- paste(RNA2$location, RNA2$date, RNA2$sample_id, RNA2$accession, sep = "_")
+RNA2_ids <- RNA2 %>% 
+  select(accession, sample_id)
+
+RNA3$sample_id <- paste(RNA3$location, RNA3$date, RNA3$sample_id, RNA3$accession, sep = "_")
+RNA3_ids <- RNA3 %>% 
+  select(accession, sample_id)
+
+Chaq$sample_id <- paste(Chaq$location, Chaq$date, Chaq$sample_id, Chaq$accession, sep = "_")
+Chaq_ids <- Chaq %>% 
+  select(accession, sample_id)
+
+# write out header lines to make this an iTOL annotation file
+# in the style of labels_template.txt
+write_itol_labels_header <- function(filename){
+  fileConn<-file(filename)
+  writeLines(c("LABELS","SEPARATOR SPACE","DATA"), fileConn)
+  close(fileConn)
+}
+filename <- "galbut_RNA1_label_format.txt"
+write_itol_labels_header(filename)
+write.table(RNA1_ids, file=filename, append=T, sep=" ", col.names=F, row.names=F, quote=F)
+
+filename <- "galbut_RNA2_label_format.txt"
+write_itol_labels_header(filename)
+write.table(RNA2_ids, file=filename, append=T, sep=" ", col.names=F, row.names=F, quote=F)
+
+filename <- "galbut_RNA3_label_format.txt"
+write_itol_labels_header(filename)
+write.table(RNA3_ids, file=filename, append=T, sep=" ", col.names=F, row.names=F, quote=F)
+
+filename <- "chaq_label_format.txt"
+write_itol_labels_header(filename)
+write.table(Chaq_ids, file=filename, append=T, sep=" ", col.names=F, row.names=F, quote=F)

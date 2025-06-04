@@ -82,10 +82,10 @@ PQ625134 label #0000FF normal 1
 PQ625135 label #0000FF normal 1
 PQ625136 label #0000FF normal 1
 PQ625137 label #CC6600 normal 1
-PQ625138 label #CC6000 normal 1
-PQ625139 label #CC6000 normal 1
-PQ625140 label #CC6000 normal 1
-PQ625141 label #CC6000 normal 1
+PQ625138 label #0000FF normal 1
+PQ625139 label #0000FF normal 1
+PQ625140 label #0000FF normal 1
+PQ625141 label #0000FF normal 1
 PQ625142 label #CC6600 normal 1
 PQ625143 label #CC6600 normal 1
 PQ625144 label #CC6600 normal 1
@@ -98,7 +98,7 @@ PQ625150 label #CC6600 normal 1
 PQ625151 label #CC6600 normal 1
 PQ625152 label #CC6600 normal 1
 PQ625153 label #CC6600 normal 1
-galbut_EVE_from_Wallace_supp_fig_S10 label #006600 normal 1
+EVE label #006600 normal 1
 KX884152 label #A0A0A0 normal 1
 MH384335 label #A0A0A0 normal 1
 MH384353 label #A0A0A0 normal 1

@@ -69,7 +69,7 @@ remap_all <- remap_all %>%
 
 ## Compare qPCR w/ sequencing abundance
 # Read in qPCR data
-qPCR_metadata <- read_csv("analyses/data/Metadata_Table.csv") %>% 
+qPCR_metadata <- read_xlsx("analyses/data/Metadata_Table.xlsx") %>% 
   select(sample_name, ct_2165_2170, ct_rpl, infection_status, clade, chaq_present) %>% 
   mutate(id = sample_name,
          id = str_replace_all(id, "_", "-")) 
@@ -118,16 +118,32 @@ all_rpm <- remap_all_wide %>%
 
 write_csv(all_rpm, "analyses/data/all_rpm_counts.csv")
 
+# Numbers
+avg_a_vs_b <- remap_all_wide %>% 
+  filter(infection_status == "sin") %>% 
+  group_by(clade) %>% 
+  summarise(mean = mean(rpm_total),
+            median = median(rpm_total))
+
 # Filter coinfections out
 remap_no_co <- remap_all_wide %>% 
   filter(infection_status == "sin") %>% 
   filter(clade != "-")
+
+#Wilcoxon test to compare genotype rpms
+geno_wilcox <- remap_no_co %>% 
+  ungroup() %>% 
+  wilcox_test(rpm_total ~ clade)
+geno_wilcox_plot <- geno_wilcox %>% add_xy_position(x = "clade")
+
 
 A_vs_B <- ggplot(remap_no_co, aes(x = clade, y = rpm_total)) +
   geom_boxplot() +
   geom_jitter(aes(color = clade), height = 0, width = 0.15, size = 2.5, alpha = 0.85) +
   scale_color_manual(values = c("darkolivegreen", "slateblue4")) +
   scale_y_log10() +
+  stat_pvalue_manual(geno_wilcox_plot, tip.length = 0.01, y.position = 5,
+                     bracket.shorten=0.1, size=3, bracket.nudget.y=0.1) +
   theme_minimal(base_size = 11) +
   theme(panel.border = element_rect(linetype = "solid", fill = NA),
         strip.background = element_rect(colour = "black", fill = "white"),
@@ -141,15 +157,27 @@ A_vs_B <- ggplot(remap_no_co, aes(x = clade, y = rpm_total)) +
 A_vs_B  
 ggsave("analyses/plots/clade_vs_rpm.pdf", units = "in", width = 10, height = 8) 
 
+# Wilcoxon test to compare sample rpms
 all_A <- remap_all_wide %>% 
   filter(clade == "A") %>% 
   filter(infection_status == "sin")
+
+chaq_wilcox <- all_A %>% 
+  ungroup() %>% 
+  wilcox_test(rpm_total ~ chaq_present)
+chaq_wilcox_plot <- chaq_wilcox %>% add_xy_position(x = "chaq_present")
+
+# Levene's Test to compare variance
+lev <- leveneTest(rpm_total ~ chaq_present, all_A)
+lev
 
 Chaq_vs_noChaq <- ggplot(all_A, aes(x = chaq_present, y = rpm_total)) +
   geom_boxplot() +
   geom_jitter(aes(color = chaq_present), height = 0, width = 0.15, size = 2.5, alpha = 0.85) +
   scale_color_manual(values = c("steelblue4", "orchid4")) +
   scale_y_log10() +
+  stat_pvalue_manual(chaq_wilcox_plot, tip.length = 0.01, y.position = 5,
+                     bracket.shorten=0.1, size=3, bracket.nudget.y=0.1) +
   theme_minimal(base_size = 11) +
   theme(panel.border = element_rect(linetype = "solid", fill = NA),
         strip.background = element_rect(colour = "black", fill = "white"),
@@ -161,41 +189,8 @@ Chaq_vs_noChaq <- ggplot(all_A, aes(x = chaq_present, y = rpm_total)) +
        color = "Chaq presence")
 
 Chaq_vs_noChaq 
+
 ggsave("analyses/plots/chaq_vs_noChaq.pdf", units = "in", width = 10, height = 8) 
-
-# bi/trimodal infection phenotype?
-phenotype <- ggplot(remap_all, aes(x = rpm)) +
-  geom_histogram() +
-  scale_x_log10() +
-  facet_wrap(~clade) +
-  theme_minimal(base_size = 11) +
-  theme(panel.border = element_rect(linetype = "solid", fill = NA),
-        strip.background = element_rect(colour = "black", fill = "white"),
-        strip.text = element_text(face = "bold"),
-        axis.text = element_text(face = "bold"),
-        text = element_text(size = 20),
-        axis.text.x = element_text(angle = 0, hjust = 1, vjust = 1)) +
-  labs(y = "Number of samples", x = "Total Number of Galbut Virus Reads per Million (log10)")
-
-phenotype            
-
-phenotype_RNA <- ggplot(remap_all, aes(x = rpm)) +
-  geom_histogram() +
-  scale_x_log10() +
-  facet_wrap(~segment) +
-  theme_minimal(base_size = 11) +
-  theme(panel.border = element_rect(linetype = "solid", fill = NA),
-        strip.background = element_rect(colour = "black", fill = "white"),
-        strip.text = element_text(face = "bold"),
-        axis.text = element_text(face = "bold"),
-        text = element_text(size = 20),
-        axis.text.x = element_text(angle = 0, hjust = 1, vjust = 1)) +
-  labs(y = "Number of samples", x = "Number of Galbut Virus Reads per Million (log10)")
-
-phenotype_RNA
-ggsave("analyses/plots/phenotype_RNA.pdf", units = "in", width = 10, height = 8) 
-
-
 
 # do RPM counts differ by segment?
 
@@ -213,13 +208,14 @@ df_wilcox_plot <- df_wilcox %>% add_xy_position(x = "segment")
 phenotype_RNA_jitter <- ggplot(remap_comp_all) + 
   # these lines will connect points from the same sample
   # geom_line(aes(x = segment, y = rpm, group=id), 
-              # color="slateblue", linewidth=0.25, alpha=0.25) +
+  # color="slateblue", linewidth=0.25, alpha=0.25) +
   geom_jitter(aes(x = segment, y = rpm),
-              shape=21, fill="darkslateblue", color="black", size=2, stroke=0.25, alpha=0.5,
+              shape=21, fill="darkslateblue", color="black", size=2, stroke=0.25, 
+              alpha=0.5,
               width=0.20, height=0) +
   geom_boxplot(aes(x = segment, y = rpm), 
-              color="darkslateblue", outlier.shape=NA, fill=NA,
-              width=0.5) +
+               color="darkslateblue", outlier.shape=NA, fill=NA,
+               width=0.5) +
   theme_minimal(base_size = 11) +
   theme(panel.border = element_rect(linetype = "solid", fill = NA),
         strip.background = element_rect(colour = "black", fill = "white"),
@@ -236,7 +232,8 @@ phenotype_RNA_jitter
 y_positions <- rep(c(5,5.2),1)
 phenotype_RNA_jitter_stats <- phenotype_RNA_jitter + 
   stat_pvalue_manual(filter(df_wilcox_plot, p.adj.signif != "ns"), 
-                     y.position = y_positions, tip.length = 0.01, bracket.shorten=0.1, size=3, bracket.nudget.y=0.1)
+                     y.position = y_positions, tip.length = 0.01, 
+                     bracket.shorten=0.1, size=3, bracket.nudget.y=0.1)
 phenotype_RNA_jitter_stats 
 ggsave("analyses/plots/RPM_per_segment.pdf", units = "in", width = 10, height = 8)
 
@@ -252,39 +249,18 @@ RNA1_2_p <- filter(df_wilcox_plot, group1 == "RNA1" & group2 == "RNA2") %>% pull
 RNA1_3_p <- filter(df_wilcox_plot, group1 == "RNA1" & group2 == "RNA3") %>% pull(p.adj)
 
 paper_text <- paste0(
-"This was consistent with lower average coverage levels for RNA1 (Fig. X). ",
-"The median level of RNA1 mapping reads per million total reads (RPM) was ",
-sprintf("%0.0f", RNA1_median),
-". ",
-"This was significantly lower than the median RPM values for RNA2 and RNA3 of ",
-sprintf("%0.0f", RNA2_median),
-" and ",
-sprintf("%0.0f", RNA3_median),
-" respectively (Wilcoxon p adjusted = ",
-sprintf("%0.3f", RNA1_2_p),
-" and ",
-sprintf("%0.3f", RNA1_3_p),
-"; Fig. X). "
- )
+  "This was consistent with lower average coverage levels for RNA1 (Fig. X). ",
+  "The median level of RNA1 mapping reads per million total reads (RPM) was ",
+  sprintf("%0.0f", RNA1_median),
+  ". ",
+  "This was significantly lower than the median RPM values for RNA2 and RNA3 of ",
+  sprintf("%0.0f", RNA2_median),
+  " and ",
+  sprintf("%0.0f", RNA3_median),
+  " respectively (Wilcoxon p adjusted = ",
+  sprintf("%0.3f", RNA1_2_p),
+  " and ",
+  sprintf("%0.3f", RNA1_3_p),
+  "; Fig. X). "
+)
 paper_text
-
-# Numbers
-avg_a_vs_b <- remap_all_wide %>% 
-  filter(infection_status == "sin") %>% 
-  group_by(clade) %>% 
-  summarise(mean = mean(rpm_total),
-            median = median(rpm_total))
-
-# STATS
-chaq_p <- all_A %>% 
-  filter(chaq_present == "y") 
-chaq_a <- all_A %>% 
-  filter(chaq_present == "n")
-
-# Wilcoxon test to compare sample rpms
-wilco <- wilcox.test(chaq_a$rpm_total, chaq_p$rpm_total)
-wilco
-
-# Levene's Test to compare variance
-lev <- leveneTest(rpm_total ~ chaq_present, all_A)
-lev

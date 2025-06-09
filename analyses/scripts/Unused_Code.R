@@ -482,4 +482,37 @@ rna2_tree_relabeled <- di2multi(rna2_tree_relabeled, tol = 0.001)
 rna3_tree_relabeled <- di2multi(rna3_tree_relabeled, tol = 0.001)
 Chaq_tree_relabeled <- di2multi(Chaq_tree_relabeled, tol = 0.001)
 
+
+# bi/trimodal infection phenotype?
+phenotype <- ggplot(remap_all, aes(x = rpm)) +
+  geom_histogram() +
+  scale_x_log10() +
+  facet_wrap(~clade) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 0, hjust = 1, vjust = 1)) +
+  labs(y = "Number of samples", x = "Total Number of Galbut Virus Reads per Million (log10)")
+
+phenotype            
+
+phenotype_RNA <- ggplot(remap_all, aes(x = rpm)) +
+  geom_histogram() +
+  scale_x_log10() +
+  facet_wrap(~segment) +
+  theme_minimal(base_size = 11) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA),
+        strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text = element_text(face = "bold"),
+        axis.text = element_text(face = "bold"),
+        text = element_text(size = 20),
+        axis.text.x = element_text(angle = 0, hjust = 1, vjust = 1)) +
+  labs(y = "Number of samples", x = "Number of Galbut Virus Reads per Million (log10)")
+
+phenotype_RNA
+ggsave("analyses/plots/phenotype_RNA.pdf", units = "in", width = 10, height = 8) 
+
        

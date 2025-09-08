@@ -7,9 +7,9 @@ library(TreeTools)
 ## Remake trees with coinfection samples removed
 # Read in new trees
 RNA1 <- read.tree("analyses/trees/tanglegrams/RNA1_no_coinfection.fasta.contree")
-RNA2 <- read.tree("analyses/trees/tanglegrams/RNA2_no_coinfection.fasta.contree")
-RNA3 <- read.tree("analyses/trees/tanglegrams/RNA3_no_coinfection.fasta.contree")
-Chaq <- read.tree("analyses/trees/tanglegrams/Chaq_no_coinfection.fasta.contree")
+RNA2 <- read.tree("analyses/trees/tanglegrams/RNA2_updated_no_coinf.fasta.contree")
+RNA3 <- read.tree("analyses/trees/tanglegrams/RNA3_updated_no_coinfect.fasta.contree")
+Chaq <- read.tree("analyses/trees/tanglegrams/Chaq_updated_no_coinf.fasta.contree")
 
 # midpoint root both trees
 rna1_tree_rooted <- midpoint_root(RNA1)
@@ -119,7 +119,7 @@ plot.cophylo(cophy,
              link.type = "curved", 
              link.lwd=1,
              link.lty="solid",
-             link.col=make.transparent("navyblue", 0.25),
+             link.col=make.transparent("grey", 0.25),
              fsize=0.3, 
              pts=F,
              scale.bar = c(0.025, 0.025))
@@ -151,7 +151,7 @@ plot.cophylo(cophy,
              link.type = "curved", 
              link.lwd=1,
              link.lty="solid",
-             link.col=make.transparent("navyblue", 0.25),
+             link.col=make.transparent("grey", 0.25),
              fsize=0.3, 
              pts=F,
              scale.bar = c(0.025, 0.025))
@@ -183,7 +183,7 @@ plot.cophylo(cophy,
              link.type = "curved", 
              link.lwd=1,
              link.lty="solid",
-             link.col=make.transparent("navyblue", 0.25),
+             link.col=make.transparent("grey", 0.25),
              fsize=0.3, 
              pts=F,
              scale.bar = c(0.025, 0.025))
@@ -245,7 +245,7 @@ plot.cophylo(cophy,
              link.type = "curved", 
              link.lwd=1,
              link.lty="solid",
-             link.col=make.transparent("navyblue", 0.25),
+             link.col=make.transparent("grey", 0.25),
              fsize=0.3, 
              pts=F,
              scale.bar = c(0.025, 0.025))
@@ -277,7 +277,7 @@ plot.cophylo(cophy,
              link.type = "curved", 
              link.lwd=1,
              link.lty="solid",
-             link.col=make.transparent("navyblue", 0.25),
+             link.col=make.transparent("grey", 0.25),
              fsize=0.3, 
              pts=F,
              scale.bar = c(0.025, 0.025))
@@ -309,7 +309,7 @@ plot.cophylo(cophy,
              link.type = "curved", 
              link.lwd=1,
              link.lty="solid",
-             link.col=make.transparent("navyblue", 0.25),
+             link.col=make.transparent("grey", 0.25),
              fsize=0.3, 
              pts=F,
              scale.bar = c(0.025, 0.025))

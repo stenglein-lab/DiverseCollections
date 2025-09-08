@@ -1,35 +1,26 @@
-Segment,Codon,Alpha (1),Beta (2),Alpha=Beta (3),LRT (4),p-value (5),Total Branch Length (6)
-Chaq,24,0,2.63,0.58,2.89,0.09,0.01
-Chaq,109,0,12.61,0.7,6.41,0.01,0.01
-RNA1,43,0,14.17,1.02,5.88,0.02,0.1
-RNA1,412,0,2.18,0.61,3.01,0.08,0.05
-RNA2,78,0,3.07,1.35,3.17,0.08,0.02
-RNA2,136,0,3.45,1.11,4.3,0.04,0.02
-RNA2,191,0,3.74,1.17,4.48,0.03,0.02
-RNA2,431,0,2.39,0.52,2.99,0.08,0.06
-RNA3,14,0,1.85,0.41,2.71,0.1,0
-RNA3,17,0.8,43.03,1.57,4.32,0.04,0.01
-RNA3,24,0,26.57,2.51,8.02,0,0.01
-RNA3,31,0,10.96,1.66,6.54,0.01,0
-RNA3,55,0,15.99,0.41,6.14,0.01,0.01
-RNA3,57,0,41.82,1.27,3.55,0.06,0.01
-RNA3,91,0.7,65.34,1.94,5.08,0.02,0.01
-RNA3,94,0.89,6542.52,1.81,7.43,0.01,0.01
-RNA3,96,0,2.91,0.36,3.76,0.05,0
-RNA3,98,0,2.15,0.36,3.14,0.08,0
-RNA3,106,0.58,4.42,1.47,2.8,0.09,0
-RNA3,111,0.5,5.16,1.32,3.62,0.06,0
-RNA3,147,0,2.05,0.35,3.17,0.08,0.01
-RNA3,159,0,2.5,0.72,4.15,0.04,0.01
-RNA3,233,0,13.82,1.3,7.08,0.01,0.01
-RNA3,255,0.72,10.24,2.08,3.88,0.05,0.01
-RNA3,260,0,2.33,0.39,3.14,0.08,0
-RNA3,442,0,2.64,0.71,4.66,0.03,0.01
-RNA3,448,0,2.14,0.35,3.19,0.07,0
-RNA3,449,0,20.87,1.92,9.19,0,0.01
-(1) Synonymous substitution rate at a site,,,,,,,
-(2) Non-synonymous substitution rate at a site,,,,,,,
-(3) The rate estimate under the neutral model,,,,,,,
-"(4) Likelihood ratio test statistic for beta = alpha, versus beta /= alpha",,,,,,,
-(5) Asymptotic p-value for evidence of selection,,,,,,,
-"(6) The total length of branches contributing to inference at this site, used to scale dN-dS",,,,,,,
+segment,codon,alpha,beta,alpha.beta,LRT,p.value,Total.branch.length
+Chaq,30,0,2.075,1.314,3.102,0.0782,1.63
+RNA1,43,0,3.036,2.118,5.285,0.0215,4.115
+RNA1,299,0,1.155,0.762,4.062,0.0439,1.481
+RNA2,114,0,1.747,1.153,3.262,0.0709,1.394
+RNA2,257,0,2.065,1.384,3.184,0.0744,1.673
+RNA2,431,0,1.549,0.874,3.41,0.0648,1.056
+RNA3,4,0,0.982,0.701,3.281,0.0701,1.654
+RNA3,43,0,1.631,1.072,3.279,0.0702,2.529
+RNA3,52,0,1.382,1.042,3.543,0.0598,2.46
+RNA3,55,0,0.961,0.693,3.155,0.0757,1.636
+RNA3,66,1.29,6.826,4.798,3.496,0.0615,11.325
+RNA3,73,0,0.872,0.546,3.657,0.0558,1.29
+RNA3,159,0,1.457,1.034,4.709,0.03,2.44
+RNA3,164,0,0.86,0.606,2.858,0.0909,1.431
+RNA3,194,0,0.718,0.448,2.813,0.0935,1.057
+RNA3,221,0,1.136,0.725,4.345,0.0371,1.712
+RNA3,233,0,2.467,1.876,5.386,0.0203,4.427
+RNA3,266,0,0.95,0.722,2.707,0.0999,1.704
+RNA3,351,0,1.062,0.649,3.855,0.0496,1.532
+(1) Synonymous substitution rate at a site.,,,,,,,
+(2) Non-synonymouse substitution rate at a site.,,,,,,,
+(3) The rate estimate under the neutral model.,,,,,,,
+"(4) Likelihood ratio test statistic for beta=alpha, versus beta /= alpha.",,,,,,,
+(5) Asymptotic p-value for evidence of selection.,,,,,,,
+"(6) The total length of branches contributing to inference at this site, used to scale dN/dS.",,,,,,,

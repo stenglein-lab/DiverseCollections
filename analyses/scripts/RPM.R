@@ -80,7 +80,7 @@ remap_all <- left_join(remap_all, qPCR_metadata, by = "id") %>%
          relative = 2^-delta_ct)
 
 # Regression
-reg <- glm(relative ~ num_reads, data = filter(remap_all, segment == "RNA1"))
+reg <- glm(log10(relative) ~ log10(num_reads), data = filter(remap_all, segment == "RNA1"))
 summary(reg)
 
 # Make plot

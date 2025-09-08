@@ -9,31 +9,28 @@ RNA1 <- read.csv("analyses/trees/RNA1/RNA1_FEL.csv") %>%
 RNA2 <- read.csv("analyses/trees/RNA2/RNA2_FEL.csv") %>% 
   mutate(segment = "RNA2")
 
-RNA3_sim <- read.csv("analyses/trees/RNA3/RNA3_FEL_sim.csv") %>% 
+RNA3 <- read.csv("analyses/trees/RNA3/RNA3_FEL.csv") %>% 
   mutate(segment = "RNA3")
 
-RNA3_else <- read.csv("analyses/trees/RNA3/RNA3_FEL.csv") %>% 
-  mutate(segment = "RNA3")
-
-all_invariable <- rbind(chaq, RNA1, RNA2, RNA3_else, RNA3_sim) %>% 
+all_invariable <- rbind(chaq, RNA1, RNA2, RNA3) %>% 
   filter(class == "Invariable") %>% 
   select(segment, codon, alpha, beta, alpha.beta, LRT, p.value, Total.branch.length)
 
 write.csv(all_invariable, file = "analyses/trees/invariable_selection.csv")
 
-all_neutral <- rbind(chaq, RNA1, RNA2, RNA3_else, RNA3_sim) %>% 
+all_neutral <- rbind(chaq, RNA1, RNA2, RNA3) %>% 
   filter(class == "Neutral") %>% 
   select(segment, codon, alpha, beta, alpha.beta, LRT, p.value, Total.branch.length)
 
 write.csv(all_neutral, file = "analyses/trees/invariable_neutral.csv")
 
-all_purifying <- rbind(chaq, RNA1, RNA2, RNA3_else, RNA3_sim) %>% 
+all_purifying <- rbind(chaq, RNA1, RNA2, RNA3) %>% 
   filter(class == "Purifying") %>% 
   select(segment, codon, alpha, beta, alpha.beta, LRT, p.value, Total.branch.length)
 
 write.csv(all_purifying, file = "analyses/trees/purifying_selection.csv")
 
-all_diversifying <- rbind(chaq, RNA1, RNA2, RNA3_else, RNA3_sim) %>% 
+all_diversifying <- rbind(chaq, RNA1, RNA2, RNA3) %>% 
   filter(class == "Diversifying") %>% 
   select(segment, codon, alpha, beta, alpha.beta, LRT, p.value, Total.branch.length)
 

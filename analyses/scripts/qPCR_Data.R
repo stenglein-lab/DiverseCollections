@@ -1,3 +1,5 @@
+# This script was used to generate the qPCR relevant panels in figure 1. It reads in 
+# qPCR data in a tidy format.
 library(tidyverse)
 library(FSA)
 library(broom)

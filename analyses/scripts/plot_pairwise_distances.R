@@ -1,3 +1,4 @@
+# This script was used to plot pair-wise distances to visualize which segments were more diverse than others.
 library(tidyverse)
 library(seqinr) # for dist.mat
 

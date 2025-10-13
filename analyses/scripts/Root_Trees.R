@@ -1,3 +1,4 @@
+# This script was used to root IqTrees prior to annotation in iTol and Affinity Designer
 library(phytools)
 library(ape)
 library(tidyverse)
@@ -8,7 +9,7 @@ library(TreeTools)
 RNA1 <- read.tree("analyses/trees/RNA1/RNA1_nucleotide_alignment.fasta-1.contree")
 RNA2 <- read.tree("analyses/trees/RNA2/RNA2_cont_removed_align.fasta.contree")
 RNA3 <- read.tree("analyses/trees/RNA3/RNA3_cont_removed_align.fasta.contree")
-Chaq <- read.tree("analyses/trees/Chaq/chaq_cont_removed_align.fasta.contree")
+Chaq <- read.tree("analyses/trees/Chaq/Chaq_align_no_cont.fasta.contree")
 
 # Midpoint root trees
 rna1_tree_rooted <- midpoint_root(RNA1)

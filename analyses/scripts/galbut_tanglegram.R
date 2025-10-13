@@ -1,3 +1,5 @@
+# This script was used to generate cophylogonies of all the galbut virus and chaq 
+# virus segments.
 library(phytools)
 library(ape)
 library(tidyverse)

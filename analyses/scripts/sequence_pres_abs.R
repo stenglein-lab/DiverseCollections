@@ -1,3 +1,5 @@
+# This script was used to look at galbut virus and chaq virus segement presence 
+# in a heat map style figure. The code used for figure 4.
 library(tidyverse)
 library(readxl)
 library(forcats)

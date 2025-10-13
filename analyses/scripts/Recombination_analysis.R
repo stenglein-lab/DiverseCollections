@@ -1,3 +1,8 @@
+# This script was used to investigate the potential of two recombination events
+# The figures suggested that the recombination for chaq was the result of a chimeric
+# sequence that we were unable to separate into two sequences due to low coverage.
+# The second potential recombination event was likely the result of natural variation.
+
 library(tidyverse)
 
 # Read in the data

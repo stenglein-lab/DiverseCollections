@@ -1,3 +1,4 @@
+# This script was used to compile the data from the selection analyses.
 library(tidyverse)
 
 chaq <- read.csv("analyses/trees/Chaq/Chaq_FEL.csv") %>% 

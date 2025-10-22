@@ -1,0 +1,7 @@
+location	group1	group2	n	p	p.adj	p.adj.signif
+Wabash	August	July	295	1.29e-12	3.87e-12	****
+Wabash	August	September	298	0.793	0.793	ns
+Wabash	July	September	185	1.04e-09	2.08e-09	****
+Rampart	August	October	58	7.51e-05	0.00015	***
+Rampart	August	September	59	6.09e-06	1.83e-05	****
+Rampart	October	September	35	0.658	0.658	ns

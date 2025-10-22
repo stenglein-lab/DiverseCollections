@@ -1,0 +1,67 @@
+group1	group2	n	p	p.adj	p.adj.signif
+Wabash	Adobe	405	0.0815	1	ns
+Wabash	Briarwood	394	0.126	1	ns
+Wabash	Elm	459	0.0309	1	ns
+Wabash	James	397	1	1	ns
+Wabash	JFK Parkway	484	9.85e-07	6.3e-05	****
+Wabash	Linden	591	0.0334	1	ns
+Wabash	Maine	421	1	1	ns
+Wabash	Myrtle	413	0.247	1	ns
+Wabash	Ohio	392	0.179	1	ns
+Wabash	Pennsylvania	421	0.00962	0.491	ns
+Wabash	Rampart	465	0.000568	0.0335	*
+Adobe	Briarwood	21	0.0276	1	ns
+Adobe	Elm	86	0.00895	0.465	ns
+Adobe	James	24	0.249	1	ns
+Adobe	JFK Parkway	111	1	1	ns
+Adobe	Linden	218	0.316	1	ns
+Adobe	Maine	48	0.238	1	ns
+Adobe	Myrtle	40	0.0315	1	ns
+Adobe	Ohio	19	0.0506	1	ns
+Adobe	Pennsylvania	48	1	1	ns
+Adobe	Rampart	92	0.00182	0.102	ns
+Briarwood	Elm	75	0.643	1	ns
+Briarwood	James	13	0.293	1	ns
+Briarwood	JFK Parkway	100	0.0032	0.176	ns
+Briarwood	Linden	207	0.0542	1	ns
+Briarwood	Maine	37	0.144	1	ns
+Briarwood	Myrtle	29	0.622	1	ns
+Briarwood	Ohio	8	1	1	ns
+Briarwood	Pennsylvania	37	0.0117	0.585	ns
+Briarwood	Rampart	81	0.668	1	ns
+Elm	James	78	0.704	1	ns
+Elm	JFK Parkway	165	5.69e-08	3.7e-06	****
+Elm	Linden	272	0.000622	0.0361	*
+Elm	Maine	102	0.182	1	ns
+Elm	Myrtle	94	1	1	ns
+Elm	Ohio	73	0.564	1	ns
+Elm	Pennsylvania	102	0.000356	0.0214	*
+Elm	Rampart	146	0.407	1	ns
+James	JFK Parkway	103	0.0914	1	ns
+James	Linden	210	0.649	1	ns
+James	Maine	40	1	1	ns
+James	Myrtle	32	0.681	1	ns
+James	Ohio	11	0.491	1	ns
+James	Pennsylvania	40	0.172	1	ns
+James	Rampart	84	0.284	1	ns
+JFK Parkway	Linden	297	0.00137	0.0781	ns
+JFK Parkway	Maine	127	0.00372	0.201	ns
+JFK Parkway	Myrtle	119	0.000139	0.00848	**
+JFK Parkway	Ohio	98	0.0128	0.627	ns
+JFK Parkway	Pennsylvania	127	1	1	ns
+JFK Parkway	Rampart	171	8.01e-11	5.29e-09	****
+Linden	Maine	234	0.472	1	ns
+Linden	Myrtle	226	0.0579	1	ns
+Linden	Ohio	205	0.0979	1	ns
+Linden	Pennsylvania	234	0.126	1	ns
+Linden	Rampart	278	3.67e-06	0.000231	***
+Maine	Myrtle	56	0.384	1	ns
+Maine	Ohio	35	0.19	1	ns
+Maine	Pennsylvania	64	0.0816	1	ns
+Maine	Rampart	108	0.0342	1	ns
+Myrtle	Ohio	27	0.549	1	ns
+Myrtle	Pennsylvania	56	0.00566	0.3	ns
+Myrtle	Rampart	100	0.483	1	ns
+Ohio	Pennsylvania	35	0.029	1	ns
+Ohio	Rampart	79	0.606	1	ns
+Pennsylvania	Rampart	108	1.93e-05	0.0012	**

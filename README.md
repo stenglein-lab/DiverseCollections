@@ -16,9 +16,22 @@ Here is an overview of how scripts and data files in this repository map to figu
 
 - **Supplemental Table 4**: is a table of metadata for sequenced samples
 
-- **Supplemental Table 5**: is a table of species assignments based on drosophilid Cytochrome C oxidase subunit 1 sequences.  These assignments were generated using our lab's [species_id pipeline](https://github.com/stenglein-lab/species_id) [[v1.0](https://github.com/stenglein-lab/species_id/releases/tag/v1.0)], using the command line: `nextflow run stenglein-lab/species_id -profile singularity -resume  --fastq_dir ../preprocessed_reads/trimmed_fastq --outdir ../species_id -r v1.0 --fastq_pattern "*_[12].fastq.gz"
+- **Supplemental Table 5**: is a table of species assignments based on drosophilid Cytochrome C oxidase subunit 1 sequences.  These assignments were generated using our lab's [species_id pipeline](https://github.com/stenglein-lab/species_id) [[v1.0](https://github.com/stenglein-lab/species_id/releases/tag/v1.0)], using the command line: `nextflow run stenglein-lab/species_id -profile singularity -resume  --fastq_dir ../preprocessed_reads/trimmed_fastq --outdir ../species_id -r v1.0 --fastq_pattern "*_[12].fastq.gz"`
 
-- 
+- **Supplemental Figure 2**: was created using the [RPM.R script](analyses/scripts/RPM.R) and input data therein.  Host-mapping and RpL32-mapping read counts were tabulated using our lab's mapping_workflow(https://github.com/stenglein-lab/mapping_workflow/tree/virus_evol_paper) [[version](https://github.com/stenglein-lab/mapping_workflow/releases/tag/version_for_virus_evol_paper)].
 
 
+- **Figures 2-3 and Supplemental Figures 3-6 [Trees]**: were created as described in the paper, using MAFFT, iqtree, and iTOL.
+
+- **Figure 4**: was created using [sequence_pres_abs.R](analyses/scripts/sequence_pres_abs.R).  This script outputs individual panels, which were combined in Affinity Designer.
+
+- **Supplemental Figure 7**: was created using the [analyze_strand_bias.R script](analyses/scripts/analyze_strand_bias.R).
+
+- **Supplemental Figure 8**: was created using [plot_pairwise_distances.R](analyses/scripts/plot_pairwise_distances.R).
+
+- **Figure 5**: was created using [dN_dS_tables.R](analyses/scripts/dN_dS_tables.R) and data files therein.
+
+- **Figure 6**: was created using the [RPM.R script](analyses/scripts/RPM.R) and input data therein.  
+
+- **Figures 7-8 and Supplemental Figures 9-12 (tanglegrams)**: were created using [galbut_tanglegrams.R](analyses/scripts/galbut_tanglegrams.R).
 

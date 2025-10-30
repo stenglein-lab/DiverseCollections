@@ -5,9 +5,6 @@ library(readxl)
 library(forcats)
 
 metadata <- read_xlsx("analyses/data/Metadata_Table_OH_removed.xlsx")
-all_rpm <- read_csv("analyses/data/all_rpm_counts.csv")
-
-metadata <- left_join(metadata, all_rpm, by = "sample_name")
 
 heatmap_data <- metadata %>% 
   select(sample_name, location, RNA1_submit, RNA2_submit, RNA3_submit, Chaq_submit,
@@ -213,3 +210,4 @@ heatmap_oh_sin <- ggplot(filter(heatmap_sin_oh, segment %in% c("Chaq_submit", "R
 
 heatmap_oh_sin
 ggsave("analyses/plots/heatmap_sin_oh_sub.pdf", units = "in", width = 14, height = 8)
+
